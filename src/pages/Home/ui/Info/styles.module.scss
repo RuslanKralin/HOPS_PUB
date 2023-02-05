@@ -1,0 +1,41 @@
+.infoWrapper{
+   background-color: #fffaf0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.descriptionField{
+    padding-top: 5rem;
+    color: #002420;
+    width: 100rem;
+    font-family: 'HW Atlantic Medium';
+    margin-bottom: 3rem;
+}
+
+.title{
+    font-size: 4rem;
+}
+
+.title,.descrip{
+    text-align: center;
+}
+
+.descrip{
+    font-size: 2.5rem;
+    line-height: 200%;
+}
+
+.line{
+    border-bottom: 3px solid #897e47;
+    width: 90%;
+    margin-bottom: 4rem;
+}
+
+.btnField{
+    display: flex;
+    // justify-content: space-around;
+    gap: 35rem;
+    margin-bottom: 4rem;
+}
+

@@ -1,4 +1,4 @@
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 import foto from 'assets/backgraund/foto.jpg'
 import { FiFacebook, FiTwitter } from 'react-icons/fi'
 import { FaTiktok, FaInstagram } from 'react-icons/fa'
@@ -44,35 +44,32 @@ function HomeHeader() {
                     </div>
 
                 </div>
-                <img src={foto} className={styles.fullScreenFoto} />
+                <img src={foto} className={styles.fullScreenFoto} alt='foto'/>
                 <div className={styles.title}>
                     ЖАРИМ ВСЁ, ЧТО <br></br>
                     ЛЕТАЕТ, ПЛАВАЕТ И БЕГАЕТ <br></br>
                     В ПЕЧИ JOSPER
                 </div>
                 <div className={styles.btn}>
-                    <Button variant="contained" disableElevation color='error'>
-                        ЗАБРОНИРОВАТЬ СТОЛ
-                    </Button>
-                    <Button variant="contained" disableElevation sx={{background: '#002420'}}>
-                        ЗАБРОНИРОВАТЬ СТОЛ
+                    <Button variant="contained" disableElevation sx={{background: '#c32a2a', width: '23rem',height: '5rem'}}>
+                        <div className={styles.textBtn}>ЗАБРОНИРОВАТЬ СТОЛ</div>
                     </Button>
                 </div>
                 <div className={styles.advertisingField}>
                     <div className={styles.advertisingIcon}>
-                        <div ><CiBeerMugFull className={styles.icon}/></div>
+                        <div><CiBeerMugFull className={styles.icon}/></div>
                         <div className={styles.describe}>Собственная пивоварня</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div className={styles.icon}><BiMusic className={styles.icon}/></div>
+                        <div><BiMusic className={styles.icon}/></div>
                         <div className={styles.describe}>Живой звук</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div className={styles.icon}><GiSlicedBread className={styles.icon}/></div>
+                        <div><GiSlicedBread className={styles.icon}/></div>
                         <div className={styles.describe}>Собственная кондитерская и хлеб</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div className={styles.icon}><MdSportsBasketball className={styles.icon}/></div>
+                        <div><MdSportsBasketball className={styles.icon}/></div>
                         <div className={styles.describe}>Спортивные трансляции</div>
                     </div>
                 </div>

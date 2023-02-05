@@ -51,7 +51,7 @@
 
 .fullScreenLinks{
     font-size: 20px;
-    color: beige;
+    color: #fffaf0;
     font-style: normal;
     text-transform: uppercase;
     line-height: 1.5em;
@@ -81,7 +81,7 @@ letter-spacing: .02em;
 }
 
 .registrationField{
-    color: antiquewhite;
+    color: #fffaf0;
     display: flex;
     justify-content: space-between;
     padding-right: 10rem;
@@ -89,7 +89,7 @@ letter-spacing: .02em;
 }
 
 .socialField{
-    color: antiquewhite;
+    color: #fffaf0;
       
 }
 .socialtem{
@@ -99,7 +99,7 @@ letter-spacing: .02em;
 
 .title{
     
-    color: antiquewhite;
+    color: #fffaf0;
     z-index: 2;
     text-align: center;
     font-size: 4rem;
@@ -116,11 +116,15 @@ letter-spacing: .02em;
 }
 
 .advertisingField{
-    color: antiquewhite;
+    background-color: #00000063;
+    color: #fffaf0;
     z-index: 2;  
     display: flex;
     justify-content: space-around;
-    margin-bottom: 2rem;
+    /* margin-bottom: 2rem; */
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
 }
 
 .advertisingIcon{
@@ -141,9 +145,14 @@ letter-spacing: .02em;
  margin-left: auto;
  margin-right: auto;
  background-color: #002420;
+ margin-right: 1rem;
 }
 
 .describe{
-    color: antiquewhite; 
+    color: #fffaf0; 
     font-size: 2rem;
+}
+
+.textBtn{
+    font-size: 1.5rem;
 }
