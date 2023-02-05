@@ -1,0 +1,27 @@
+.menuWrapper{
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    // justify-content: space-between;
+    
+}
+
+.menuBtnRight{
+    background-image: url('https://amwine.ru/upload/blog/22-07-2019/2.jpg');
+    background-size: 100%; /* Современные браузеры */
+    background-repeat: no-repeat;
+    width: 75rem;
+    height: 75rem;
+    color: #fffaf0;
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.menuBtnLeft{
+    width: 75rem;
+    height: 75rem;
+    background-image: url('http://primebeef.ru/images/cms/data/primebeefdenversteak.png');
+    background-size: 100%; /* Современные браузеры */
+    background-repeat: no-repeat;
+}
+

@@ -39,3 +39,23 @@
     margin-bottom: 4rem;
 }
 
+.restourantField{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.infoFoto{
+    width: 75rem;
+    height: 45rem;
+    cursor: pointer;
+}
+
+.infoRestLeft{
+    font-size: 2.5rem;
+}
+.infoRestRight{
+    font-size: 2.5rem;
+    text-align: right;
+}
+
