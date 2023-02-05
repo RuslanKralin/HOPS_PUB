@@ -1,0 +1,149 @@
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.fullScreen{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* padding: 50px 15px; */
+    
+}
+.fullScreenFoto {
+    /* background-color: black; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.fullScreenBody{
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    box-sizing: border-box;
+    padding-top: 2.4vw;
+    padding-bottom: 22.4vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    pointer-events: auto;
+
+    position: relative;
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.centralFieldItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fullScreenLinks{
+    font-size: 20px;
+    color: beige;
+    font-style: normal;
+    text-transform: uppercase;
+    line-height: 1.5em;
+    cursor: pointer;
+}
+
+.navLinks{
+    display: flex;
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
+.linkItem {
+margin-left: 2rem;
+list-style-type: none;
+font-weight: 900;
+letter-spacing: .02em;
+
+}
+
+.fullScreenTitle{
+    font-size: 50px;
+    letter-spacing: 5px;
+    font-weight: 900;
+    color: rgb(14, 112, 42);
+    border-radius: 10px;
+}
+
+.registrationField{
+    color: antiquewhite;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10rem;
+    gap:5rem;
+}
+
+.socialField{
+    color: antiquewhite;
+      
+}
+.socialtem{
+    margin-right: 3rem;
+    cursor: pointer;
+}
+
+.title{
+    
+    color: antiquewhite;
+    z-index: 2;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 900;
+    margin-bottom: 3rem;
+}
+
+.btn{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+    /* min-width: 15rem; */
+}
+
+.advertisingField{
+    color: antiquewhite;
+    z-index: 2;  
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.advertisingIcon{
+    display: flex;
+   align-items: center;
+   /* justify-content: center; */
+  
+    /* overflow: hidden; */
+}
+
+.icon{
+
+ width: 6em;
+ height: 6em;
+ border: 2px solid #002420;
+ border-radius: 50%;
+ /* shape-inside: circle(50% at center center); */
+ margin-left: auto;
+ margin-right: auto;
+ background-color: #002420;
+}
+
+.describe{
+    color: antiquewhite; 
+    font-size: 2rem;
+}
