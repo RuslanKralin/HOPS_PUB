@@ -1,0 +1,1 @@
+export {default as PrimeButton} from './PrimeButton'

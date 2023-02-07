@@ -6,8 +6,6 @@ import { CiBeerMugFull } from 'react-icons/ci'
 import { BiMusic } from 'react-icons/bi'
 import { GiSlicedBread } from 'react-icons/gi'
 import { MdSportsBasketball } from 'react-icons/md'
-import { SignInModal } from '../SignInModal'
-import { SignUpModal } from '../SignUpModal'
 import { Button } from '@mui/material'
 
 function HomeHeader() {
@@ -39,8 +37,9 @@ function HomeHeader() {
                         </div>
                     </div>
                     <div className={styles.registrationField}>
-                        <SignInModal />
-                        <SignUpModal />
+                    <Button variant="outlined" color="inherit" sx={{width:'9rem', height: '3rem', fontSize: '1.5rem'}}>Вход</Button>
+                    <Button variant="outlined" color="inherit" sx={{width:'14rem', height: '3rem', fontSize: '1.5rem'}}>РЕГИСТРАЦИЯ</Button>
+                        
                     </div>
 
                 </div>

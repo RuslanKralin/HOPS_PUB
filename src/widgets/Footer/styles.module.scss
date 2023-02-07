@@ -1,0 +1,71 @@
+.footerWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002420;
+    color: #fffaf0;
+    margin: -1rem;
+    padding-bottom: 10rem;
+}
+
+.contactsItem{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #fffaf0;
+ 
+}
+.title{
+    font-size: 11rem;
+    margin: 0;
+}
+
+.secondTitle{
+    font-size: 9rem;
+    padding-bottom: 5rem;
+}
+
+.contactItem{
+    font-size: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.contact{
+    align-items: center;
+    padding-left: 12rem;
+    padding-right: 2rem;
+    margin-bottom: 7rem;
+    font-size: 6rem;
+
+
+}
+
+.socialtem{
+    
+    cursor: pointer;
+    height: 15rem;
+    width: 15rem;
+
+}
+
+.lineLeft{
+    border-left: 0.85rem solid #fffaf0;;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: -1488px;
+    top: 0;
+}
+
+.lineRight{
+    border-left: 0.85rem solid #fffaf0;;
+    height: 600px;
+    position: absolute;
+    left: 50%;
+    margin-left: 1488px;
+    top: 0;
+}
