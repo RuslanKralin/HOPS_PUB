@@ -1,4 +1,4 @@
-import { Box, Button } from "@mui/material";
+import { Button } from "@mui/material";
 
 
 
@@ -6,7 +6,7 @@ function SignUpModal() {
     return (
         <div>
            
-                <Button variant="outlined" color="inherit">Sign up</Button>
+           <Button variant="outlined" color="inherit" sx={{width:'14rem', height: '3rem', fontSize: '1.5rem'}}>РЕГИСТРАЦИЯ</Button>
            
         </div>
     );

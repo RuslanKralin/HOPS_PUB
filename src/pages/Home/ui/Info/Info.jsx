@@ -1,7 +1,6 @@
 import { Button } from '@mui/material';
 import styles from './styles.module.scss'
-import foto2 from 'assets/backgraund/foto2.jpg'
-import foto3 from 'assets/backgraund/foto3.jpg'
+
 
 function Info() {
     return (
@@ -25,7 +24,7 @@ function Info() {
             <div className={styles.restourantField}>
                 <div className={styles.leftSection}>
                     <button>
-                        <img src='https://lh3.googleusercontent.com/p/AF1QipMKC2LMva4aFFSYvVIgkvh4YMTzlRE4cq14qSQB=s1360-w1360-h1020' className={styles.infoFoto} alt='foto' />
+                        <img src='https://idei.club/uploads/posts/2022-03/1647411980_2-idei-club-p-interer-paba-v-irlandskom-stile-interer-kr-4.jpg' className={styles.infoFoto} alt='foto' />
                     </button>
                     <div className={styles.restourantDescr}>
                         <h3 className={styles.infoRestLeft}>г.Минск, ул. Колесникова, 38</h3>
@@ -34,7 +33,7 @@ function Info() {
                 </div>
                 <div className={styles.rightSection}>
                     <button>
-                        <img src='https://lh3.googleusercontent.com/p/AF1QipOL2OX19bm9-ipuS5UkvFVgbpS2Wh5NSNaIDqCp=s1360-w1360-h1020' className={styles.infoFoto} alt='foto' />
+                        <img src='https://idei.club/uploads/posts/2022-03/thumbs/1647412005_9-idei-club-p-interer-paba-v-irlandskom-stile-interer-kr-13.jpg' className={styles.infoFoto} alt='foto' />
                     </button>
                     <div className={styles.restourantDescr}>
                         <h3 className={styles.infoRestRight}>г.Минск, ул.Кульман, 4</h3>
