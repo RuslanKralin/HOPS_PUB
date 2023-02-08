@@ -7,6 +7,8 @@ import { BiMusic } from 'react-icons/bi'
 import { GiSlicedBread } from 'react-icons/gi'
 import { MdSportsBasketball } from 'react-icons/md'
 import { Button } from '@mui/material'
+import { Link } from 'react-router-dom'
+import { ROUTES } from 'shared/consts'
 
 function HomeHeader() {
 
@@ -26,10 +28,17 @@ function HomeHeader() {
                         </div>
                         <div className={styles.fullScreenLinks}>
                             <ul className={styles.navLinks}>
-                                <li className={styles.linkItem}>Наши рестораны</li>
-                                <li className={styles.linkItem}>Меню</li>
+                                <Link className={styles.linkItem} to={ROUTES.RESTAURANT}>
+                                    <li>Рестораны</li>
+                                </Link>
+                                <Link className={styles.linkItem} to={ROUTES.MENU}>
+                                    <li>Меню</li>
+                                </Link>
                                 <li className={styles.linkItem}>Доставка</li>
-                                <li className={styles.linkItem}>Наша пивоварня</li>
+                                <Link className={styles.linkItem} to={ROUTES.BREWERY}>
+                                    <li>Пивоварня</li>
+                                </Link>
+                                
                                 <li className={styles.linkItem}>Магазины</li>
                                 <li className={styles.linkItem}>Акции</li>
                                 <li className={styles.linkItem}>Контакты</li>
@@ -37,38 +46,38 @@ function HomeHeader() {
                         </div>
                     </div>
                     <div className={styles.registrationField}>
-                    <Button variant="outlined" color="inherit" sx={{width:'9rem', height: '3rem', fontSize: '1.5rem'}}>Вход</Button>
-                    <Button variant="outlined" color="inherit" sx={{width:'14rem', height: '3rem', fontSize: '1.5rem'}}>РЕГИСТРАЦИЯ</Button>
-                        
+                        <Button variant="outlined" color="inherit" sx={{ width: '9rem', height: '3rem', fontSize: '1.5rem' }}>Вход</Button>
+                        <Button variant="outlined" color="inherit" sx={{ width: '14rem', height: '3rem', fontSize: '1.5rem' }}>РЕГИСТРАЦИЯ</Button>
+
                     </div>
 
                 </div>
-                <img src={foto} className={styles.fullScreenFoto} alt='foto'/>
+                <img src={foto} className={styles.fullScreenFoto} alt='foto' />
                 <div className={styles.title}>
                     ЖАРИМ ВСЁ, ЧТО <br></br>
                     ЛЕТАЕТ, ПЛАВАЕТ И БЕГАЕТ <br></br>
                     В ПЕЧИ JOSPER
                 </div>
                 <div className={styles.btn}>
-                    <Button variant="contained" disableElevation sx={{background: '#c32a2a', width: '23rem',height: '5rem'}}>
+                    <Button variant="contained" disableElevation sx={{ background: '#c32a2a', width: '23rem', height: '5rem' }}>
                         <div className={styles.textBtn}>ЗАБРОНИРОВАТЬ СТОЛ</div>
                     </Button>
                 </div>
                 <div className={styles.advertisingField}>
                     <div className={styles.advertisingIcon}>
-                        <div><CiBeerMugFull className={styles.icon}/></div>
+                        <div><CiBeerMugFull className={styles.icon} /></div>
                         <div className={styles.describe}>Собственная пивоварня</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><BiMusic className={styles.icon}/></div>
+                        <div><BiMusic className={styles.icon} /></div>
                         <div className={styles.describe}>Живой звук</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><GiSlicedBread className={styles.icon}/></div>
+                        <div><GiSlicedBread className={styles.icon} /></div>
                         <div className={styles.describe}>Собственная кондитерская и хлеб</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><MdSportsBasketball className={styles.icon}/></div>
+                        <div><MdSportsBasketball className={styles.icon} /></div>
                         <div className={styles.describe}>Спортивные трансляции</div>
                     </div>
                 </div>

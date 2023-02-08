@@ -8,6 +8,7 @@ function Router() {
             <Route path={ROUTES.HOME} element={<Home />} />
             <Route path={ROUTES.MENU} element={<Menu />} />
             <Route path={ROUTES.RESTAURANT} element={<Restaurant />} />
+            {/* <Route path={ROUTES.BREWERY} element={<Brewery />} /> */}
             <Route path={ROUTES.NOTFOUND} element={<NotFound />} />
 
        </Routes>
