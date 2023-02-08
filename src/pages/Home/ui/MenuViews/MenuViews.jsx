@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+import { ROUTES } from 'shared/consts';
 import styles from './styles.module.scss'
 
 
@@ -5,14 +7,20 @@ import styles from './styles.module.scss'
 function MenuViews() {
     return (
         <div className={styles.menuWrapper}>
-                <div className={styles.leftSection}>
+            <div className={styles.leftSection}>
+                <Link to={ROUTES.MENU}>
                     <button className={styles.menuBtnLeft}> FOOD
                     </button>
-                </div>
-                <div className={styles.rightSection}>
+                </Link>
+
+            </div>
+            <div className={styles.rightSection}>
+            <Link to={ROUTES.MENU}>
                     <button className={styles.menuBtnRight}>DRINK
-                    </button>
-                </div>
+                </button>
+                </Link>
+                
+            </div>
         </div>
 
     );

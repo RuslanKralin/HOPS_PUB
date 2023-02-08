@@ -15,11 +15,11 @@ function Footer() {
             </div>
             <div className={styles.contactItem}>
             <div className={styles.lineRight}></div>
-                <div className={styles.contact}>г .Минск, ул. Колесникова, 38   +375 29 399 54 33</div>
+                <div className={styles.contact}>г .Минск, ул. Колесникова, 38   +375 29 142 66 27</div>
                 <div><FaInstagram className={styles.socialtem}/></div>
             </div>
             <div className={styles.contactItem}>
-                <div className={styles.contact}>г .Минск, ул. Кульман   +375 29 399 54 33</div>
+                <div className={styles.contact}>Сотрудничество с пивоварней   +375 29 700 90 99</div>
                 <div><FaInstagram className={styles.socialtem}/></div>
             </div>
         </div>

@@ -24,7 +24,7 @@ function HomeHeader() {
                     </div>
                     <div className={styles.centralField}>
                         <div className={styles.centralFieldItems}>
-                            <h1 className={styles.fullScreenTitle}>HOSPER HOPS PUB</h1>
+                            <h1 className={styles.fullScreenTitle}>HOPS PUB</h1>
                         </div>
                         <div className={styles.fullScreenLinks}>
                             <ul className={styles.navLinks}>
@@ -46,8 +46,8 @@ function HomeHeader() {
                         </div>
                     </div>
                     <div className={styles.registrationField}>
-                        <Button variant="outlined" color="inherit" sx={{ width: '9rem', height: '3rem', fontSize: '1.5rem' }}>Вход</Button>
-                        <Button variant="outlined" color="inherit" sx={{ width: '14rem', height: '3rem', fontSize: '1.5rem' }}>РЕГИСТРАЦИЯ</Button>
+                        <Button variant="outlined" color="inherit" sx={{ width: '6rem', height: '2rem', fontSize: '1rem' }}>Вход</Button>
+                        <Button variant="outlined" color="inherit" sx={{ width: '9rem', height: '2rem', fontSize: '1rem' }}>РЕГИСТРАЦИЯ</Button>
 
                     </div>
 
