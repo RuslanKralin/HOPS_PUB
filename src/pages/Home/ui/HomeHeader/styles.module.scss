@@ -50,7 +50,7 @@
 }
 
 .fullScreenLinks{
-    font-size: 20px;
+    font-size: 1rem;
     color: #fffaf0;
     font-style: normal;
     text-transform: uppercase;
@@ -67,8 +67,8 @@
 .linkItem {
 margin-left: 2rem;
 list-style-type: none;
-font-weight: 900;
-letter-spacing: .02em;
+font-weight: 700;
+letter-spacing: .01em;
 color: #fffaf0;
 text-decoration: none;
 font-size: 1rem;
@@ -108,8 +108,8 @@ font-size: 1rem;
     color: #fffaf0;
     z-index: 2;
     text-align: center;
-    font-size: 4rem;
-    font-weight: 900;
+    font-size: 3rem;
+    font-weight: 700;
     margin-bottom: 3rem;
 }
 
@@ -143,8 +143,8 @@ font-size: 1rem;
 
 .icon{
 
- width: 6em;
- height: 6em;
+ width: 4em;
+ height: 4em;
  border: 2px solid #002420;
  border-radius: 50%;
  /* shape-inside: circle(50% at center center); */
@@ -156,9 +156,9 @@ font-size: 1rem;
 
 .describe{
     color: #fffaf0; 
-    font-size: 2rem;
+    font-size: 1.3rem;
 }
 
 .textBtn{
-    font-size: 1.5rem;
+    font-size: 1rem;
 }

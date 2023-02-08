@@ -46,8 +46,8 @@ function HomeHeader() {
                         </div>
                     </div>
                     <div className={styles.registrationField}>
-                        <Button variant="outlined" color="inherit" sx={{ width: '6rem', height: '2rem', fontSize: '1rem' }}>Вход</Button>
-                        <Button variant="outlined" color="inherit" sx={{ width: '9rem', height: '2rem', fontSize: '1rem' }}>РЕГИСТРАЦИЯ</Button>
+                        <Button variant="outlined" color="inherit" sx={{ width: '4rem', height: '1.5rem', fontSize: '0.8rem' }}>Вход</Button>
+                        <Button variant="outlined" color="inherit" sx={{ width: '7rem', height: '1.5rem', fontSize: '0.8rem' }}>РЕГИСТРАЦИЯ</Button>
 
                     </div>
 
@@ -59,7 +59,7 @@ function HomeHeader() {
                     В ПЕЧИ JOSPER
                 </div>
                 <div className={styles.btn}>
-                    <Button variant="contained" disableElevation sx={{ background: '#c32a2a', width: '23rem', height: '5rem' }}>
+                    <Button variant="contained" disableElevation sx={{ background: '#c32a2a', width: '15rem', height: '4rem'}}>
                         <div className={styles.textBtn}>ЗАБРОНИРОВАТЬ СТОЛ</div>
                     </Button>
                 </div>

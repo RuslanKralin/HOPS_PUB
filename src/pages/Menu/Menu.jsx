@@ -1,9 +1,11 @@
+import { MenuHeader } from "./ui/MenuHeader"
 
 
 function Menu() {
 
     return <div>
-        Menu 
+        <MenuHeader />
+
     </div>
 }
 
