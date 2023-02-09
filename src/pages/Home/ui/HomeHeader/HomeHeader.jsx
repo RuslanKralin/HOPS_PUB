@@ -1,5 +1,6 @@
 import styles from './styles.module.scss'
 import foto from 'assets/backgraund/foto.jpg'
+import logoLight from 'assets/backgraund/logoLight.png'
 import { FiFacebook, FiTwitter } from 'react-icons/fi'
 import { FaTiktok, FaInstagram } from 'react-icons/fa'
 import { CiBeerMugFull } from 'react-icons/ci'
@@ -24,7 +25,7 @@ function HomeHeader() {
                     </div>
                     <div className={styles.centralField}>
                         <div className={styles.centralFieldItems}>
-                            <h1 className={styles.fullScreenTitle}>HOPS PUB</h1>
+                            <img src={logoLight} className={styles.logo}/>
                         </div>
                         <div className={styles.fullScreenLinks}>
                             <ul className={styles.navLinks}>

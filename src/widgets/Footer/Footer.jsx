@@ -1,11 +1,12 @@
 import styles from './styles.module.scss'
 import { FaInstagram } from 'react-icons/fa'
+import logoLight from 'assets/backgraund/logoLight.png'
 
 function Footer() {
 
     return (
     <footer className={styles.footerWrapper}>
-        <h1 className={styles.title}>Хоспер Хопс Паб</h1>
+       <img src={logoLight} className={styles.logo}/>
         <h3 className={styles.secondTitle}>Контакты</h3>
         <div className={styles.contactsItem}>
             <div className={styles.contactItem}>
