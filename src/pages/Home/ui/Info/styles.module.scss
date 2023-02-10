@@ -18,7 +18,9 @@
 }
 
 .title{
-    font-size: 4rem;
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 40px;
 }
 
 .title,.descrip{
@@ -26,12 +28,14 @@
 }
 
 .descrip{
-    font-size: 2.5rem;
-    line-height: 200%;
+    width: 800px;
+    font-size: 1.5rem;
+    line-height: 150%;
+    padding-bottom: 40px;
 }
 
 .line{
-    border-bottom: 3px solid #897e47;
+    border-bottom: 1.5px solid #897e47;
     width: 90%;
     margin-bottom: 4rem;
 }
@@ -39,12 +43,14 @@
 .btnField{
     display: flex;
     // justify-content: space-around;
-    gap: 9rem;
+    gap: 18rem;
     margin-bottom: 4rem;
     box-sizing:border-box;
     width:auto;
     max-width:100%;
 }
+
+
 
 .restourantField{
     display: flex;
@@ -53,16 +59,18 @@
 }
 
 .infoFoto{
-    width: 55rem;
+    width: 45rem;
     height: 35rem;
     cursor: pointer;
+    
 }
-
 .infoRestLeft{
-    font-size: 2.5rem;
+    padding-top: 30px;
+    font-size: 1.5rem;
 }
 .infoRestRight{
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+    padding-top: 30px;
     text-align: right;
 }
 

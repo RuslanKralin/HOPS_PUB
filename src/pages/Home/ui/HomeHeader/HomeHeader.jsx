@@ -1,5 +1,6 @@
 import styles from './styles.module.scss'
-import foto from 'assets/backgraund/foto.jpg'
+// import foto from 'assets/backgraund/foto.jpg'
+import primeHomePhoto from 'assets/backgraund/primeHomePhoto.jpg'
 import logoLight from 'assets/backgraund/logoLight.png'
 import { FiFacebook, FiTwitter } from 'react-icons/fi'
 import { FaTiktok, FaInstagram } from 'react-icons/fa'
@@ -25,7 +26,7 @@ function HomeHeader() {
                     </div>
                     <div className={styles.centralField}>
                         <div className={styles.centralFieldItems}>
-                            <img src={logoLight} className={styles.logo}/>
+                            <img src={logoLight} className={styles.logo} alt='photo'/>
                         </div>
                         <div className={styles.fullScreenLinks}>
                             <ul className={styles.navLinks}>
@@ -53,7 +54,7 @@ function HomeHeader() {
                     </div>
 
                 </div>
-                <img src={foto} className={styles.fullScreenFoto} alt='foto' />
+                <img src={primeHomePhoto} className={styles.fullScreenFoto} alt='photo' />
                 <div className={styles.title}>
                     ЖАРИМ ВСЁ, ЧТО <br></br>
                     ЛЕТАЕТ, ПЛАВАЕТ И БЕГАЕТ <br></br>

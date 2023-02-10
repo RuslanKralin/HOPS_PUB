@@ -1,6 +1,6 @@
 // import { Home } from "pages/Home"
 import { BrowserRouter } from "react-router-dom"
-// import { Layout } from "./Layout"
+import { Layout } from "./Layout"
 import Router from "./Router"
 
 function App() {
@@ -8,7 +8,7 @@ function App() {
     return <BrowserRouter> <div>
         {/* <Home/> */}
         <Router/>
-        {/* <Layout/> */}
+        <Layout/>
     </div>
     </BrowserRouter>
 }
