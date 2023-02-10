@@ -12,7 +12,7 @@
 
 .headerInfo{
     position: absolute;
-    top: 22%;
+    top: 30%;
     left: 0%;
     object-fit: cover;
     z-index: 2;
@@ -29,14 +29,14 @@
     font-weight: 900;
 }
 
-.btn{
-    position: absolute;
-    top: 16%;
-    left: 0%;
-    object-fit: cover;
-    z-index: 2;
-    margin-left: 250%;
-}
+// .btn{
+//     position: absolute;
+//     top: 16%;
+//     left: 0%;
+//     object-fit: cover;
+//     z-index: 2;
+//     margin-left: 250%;
+// }
 
 .textBtn{
     font-size: 0.6rem;
@@ -59,12 +59,14 @@
 }
 
 .headerNavBar{
+    position: sticky;
+    // position: fixed;
     background-color: #fffaf0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    box-shadow: 0 0 6px rgb(0 0 0 / 15%);
+    box-shadow: 0 0 16px rgb(0 0 0 / 25%);
 }
 
 .food{

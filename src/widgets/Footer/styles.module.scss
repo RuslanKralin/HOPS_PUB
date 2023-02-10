@@ -35,13 +35,24 @@
     // display: flex;
     flex-direction: column;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border-right: 2px solid #fffaf0;
 
     
 }
+.contactItemRight{
+    font-size: 2rem;
+    flex-direction: column;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
 
 .contact{
+    margin-bottom: 3rem;
+    font-size: 0.7em;
+    padding-left: 130px;
+}
+.contactRight{
     margin-bottom: 3rem;
     font-size: 0.7em;
 }
@@ -83,4 +94,12 @@
     grid-template-columns: 1fr 1fr 1fr;
     overflow:hidden;
 
+}
+
+.adress{
+    padding-bottom: 20px;
+}
+
+.phone{
+    padding-left: 40px;
 }
