@@ -1,9 +1,10 @@
+import { RestaurantHeader } from "./ui/RestaurantHeader"
 
 
 function Restaurant() {
 
     return <div>
-        Restaurant
+        <RestaurantHeader />
     </div>
 }
 
