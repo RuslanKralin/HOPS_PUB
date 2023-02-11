@@ -1,0 +1,79 @@
+.wrapper{
+    background-color: #fffaf0;;
+}
+
+.logo{
+    width: 300px;
+}
+
+.about{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.aboutItem{
+    border: 1px solid #002420;
+    padding: 5px 10px;
+    color: white;
+    background-color: #002420;
+    border-radius: 10px;
+}
+
+.aboutRestaurants{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftBtn, .rightBtn {
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+
+.rightBtn{
+background-image: url('https://www.restoclub.ru/uploads/place_thumbnail_big/c/6/a/3/c6a3e217fe88097b8e50b0ef32a4a969.jpg');
+background-position: center;
+}
+
+.leftBtn{
+    background-image: url('https://img.restoclub.ru/uploads/place/e/9/8/7/e987e5495104d7034aaa33a862d6fc02_w1200_h630--c.jpeg');
+    background-position: center;
+}
+.left{
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    text-align: center;
+    padding-top: 40px;
+    // padding-left: 25px;
+    margin-bottom: 30px;
+}
+
+.right{
+    text-align: center;
+    padding-top: 40px;
+    // padding-right: 65px;
+    margin-bottom: 30px;
+}
+
+.title{
+    padding: 10px 0;
+    color: #fffaf0;
+    background: #0000008a;
+    font-size: 25px;
+}
+
+.orderBtn{
+    margin-top: 20px;
+    padding: 5px 70px;
+    border: 1px solid #002420;
+    border-radius: 10px;
+    font-weight: 700;
+    background: white;
+}
+

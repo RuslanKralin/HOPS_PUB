@@ -2,6 +2,12 @@
     background-color: #fffaf0;
 }
 
+.img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
 .logo{
     width: 200px;
 }
@@ -41,11 +47,8 @@
 .textBtn{
     font-size: 0.6rem;
 }
-.img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
+
+
 
 .limitedConteiner{
     padding-left: 150px;
