@@ -1,7 +1,9 @@
+import styles from './styles.module.scss'
 
 function SignUpModal() {
     return (
-        <div>
+        <div className={styles.wrapper}>
+
         </div>
     );
 }

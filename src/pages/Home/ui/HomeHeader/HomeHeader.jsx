@@ -11,11 +11,13 @@ import { MdSportsBasketball } from 'react-icons/md'
 import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { ROUTES } from 'shared/consts'
+import { SignUpModal } from '../SignUpModal'
 
 function HomeHeader() {
 
     return (
         <div className={styles.wrapper}>
+            <SignUpModal />
             <div className={styles.fullScreen}>
                 <div className={styles.fullScreenBody}>
                     <div className={styles.socialField}>
@@ -26,7 +28,7 @@ function HomeHeader() {
                     </div>
                     <div className={styles.centralField}>
                         <div className={styles.centralFieldItems}>
-                            <img src={logoLight} className={styles.logo} alt='photo'/>
+                            <img src={logoLight} className={styles.logo} alt="logo" />
                         </div>
                         <div className={styles.fullScreenLinks}>
                             <ul className={styles.navLinks}>
@@ -40,7 +42,7 @@ function HomeHeader() {
                                 <Link className={styles.linkItem} to={ROUTES.BREWERY}>
                                     <li>Пивоварня</li>
                                 </Link>
-                                
+
                                 <li className={styles.linkItem}>Магазины</li>
                                 <li className={styles.linkItem}>Акции</li>
                                 <li className={styles.linkItem}>Контакты</li>
@@ -48,20 +50,21 @@ function HomeHeader() {
                         </div>
                     </div>
                     <div className={styles.registrationField}>
+
                         <Button variant="outlined" color="inherit" sx={{ width: '4rem', height: '1.5rem', fontSize: '0.8rem' }}>Вход</Button>
                         <Button variant="outlined" color="inherit" sx={{ width: '7rem', height: '1.5rem', fontSize: '0.8rem' }}>РЕГИСТРАЦИЯ</Button>
 
                     </div>
 
                 </div>
-                <img src={primeHomePhoto} className={styles.fullScreenFoto} alt='photo' />
+                <div className={styles.color}><img src={primeHomePhoto} className={styles.fullScreenFoto} alt="logo" /></div>
                 <div className={styles.title}>
                     ЖАРИМ ВСЁ, ЧТО <br></br>
                     ЛЕТАЕТ, ПЛАВАЕТ И БЕГАЕТ <br></br>
                     В ПЕЧИ JOSPER
                 </div>
                 <div className={styles.btn}>
-                    <Button variant="contained" disableElevation sx={{ background: '#c32a2a', width: '15rem', height: '4rem'}}>
+                    <Button variant="contained" disableElevation sx={{ background: '#c32a2a', width: '15rem', height: '4rem' }}>
                         <div className={styles.textBtn}>ЗАБРОНИРОВАТЬ СТОЛ</div>
                     </Button>
                 </div>
