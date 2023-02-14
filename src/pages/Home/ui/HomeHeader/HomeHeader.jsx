@@ -12,12 +12,19 @@ import { Button } from '@mui/material'
 import { Link } from 'react-router-dom'
 import { ROUTES } from 'shared/consts'
 import { SignUpModal } from '../SignUpModal'
+import { SignInModal } from '../SignInModal'
+import { useState } from 'react'
+// import { SignInModal } from '../SignInModal'
 
 function HomeHeader() {
+    const [openSignUp, setOpenSignUp] = useState(false);
+    const [openSignIn, setOpenSignIn] = useState(false);
+    // const handleOpen = () => setOpen(true);
+    // const handleClose = () => setOpen(false);
 
     return (
         <div className={styles.wrapper}>
-            <SignUpModal />
+
             <div className={styles.fullScreen}>
                 <div className={styles.fullScreenBody}>
                     <div className={styles.socialField}>
@@ -51,8 +58,13 @@ function HomeHeader() {
                     </div>
                     <div className={styles.registrationField}>
 
-                        <Button variant="outlined" color="inherit" sx={{ width: '4rem', height: '1.5rem', fontSize: '0.8rem' }}>Вход</Button>
-                        <Button variant="outlined" color="inherit" sx={{ width: '7rem', height: '1.5rem', fontSize: '0.8rem' }}>РЕГИСТРАЦИЯ</Button>
+                        {/* <Button variant="outlined" color="inherit" sx={{ width: '4rem', height: '1.5rem', fontSize: '0.8rem' }}>Вход</Button> */}
+
+                        <Button onClick={()=>setOpenSignIn(true)} variant="outlined" color="inherit" sx={{ width: '4rem', height: '1.5rem', fontSize: '0.8rem' }}>Вход</Button>
+                        <Button onClick={()=>setOpenSignUp(true)} variant="outlined" color="inherit" sx={{ width: '7rem', height: '1.5rem', fontSize: '0.8rem' }}>РЕГИСТРАЦИЯ</Button>
+                        {openSignIn && <SignInModal openSignIn={openSignIn} setOpenSignIn={setOpenSignIn}/>}
+                        {openSignUp && <SignUpModal openSignUp={openSignUp} setOpenSignUp={setOpenSignUp} />}
+                        
 
                     </div>
 
