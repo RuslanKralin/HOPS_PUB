@@ -9,11 +9,11 @@ function MenuHeader() {
         <div className={styles.wrapper}>
             <div className={styles.headerSection}>
                 <div className={styles.limitedConteiner}>
-                    <img src={logoDark} className={styles.logo} />
+                    <img src={logoDark} className={styles.logo} alt="logo"/>
                 </div>
             </div>
             <div className={styles.headerImg}>
-                <img src={menuHeader} className={styles.img} alt='foto' />
+                <img src={menuHeader} className={styles.img} alt="logo" />
             </div>
             <div className={`${styles.headerInfo} ${styles.limitedConteiner} ${styles.headerInfoContent}`}>
                 <div className={styles.title}>Меню</div>
