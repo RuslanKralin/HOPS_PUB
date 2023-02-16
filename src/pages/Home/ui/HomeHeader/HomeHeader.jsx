@@ -14,6 +14,7 @@ import { ROUTES } from 'shared/consts'
 import { SignUpModal } from '../SignUpModal'
 import { SignInModal } from '../SignInModal'
 import { useState } from 'react'
+import { PrimeButton } from 'shared/ui'
 // import { SignInModal } from '../SignInModal'
 
 function HomeHeader() {
@@ -76,9 +77,10 @@ function HomeHeader() {
                     В ПЕЧИ JOSPER
                 </div>
                 <div className={styles.btn}>
-                    <Button variant="contained" disableElevation sx={{ background: '#c32a2a', width: '15rem', height: '4rem' }}>
+                    <PrimeButton/>
+                    {/* <Button variant="contained" disableElevation sx={{ background: '#c32a2a', width: '15rem', height: '4rem' }}>
                         <div className={styles.textBtn}>ЗАБРОНИРОВАТЬ СТОЛ</div>
-                    </Button>
+                    </Button> */}
                 </div>
                 <div className={styles.advertisingField}>
                     <div className={styles.advertisingIcon}>

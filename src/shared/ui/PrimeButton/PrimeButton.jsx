@@ -1,10 +1,12 @@
-import { Button } from "@mui/material";
+import styles from './styles.module.scss'
 
 function PrimeButton() {
     return (
-        <Button variant="contained" disableElevation sx={{ background: '#c32a2a', width: '23rem', height: '5rem' }}>
-            {/* <div className={styles.textBtn}>ЗАБРОНИРОВАТЬ СТОЛ</div> */}
-        </Button>
+       <div></div>
+
+
+
+
     );
 }
 

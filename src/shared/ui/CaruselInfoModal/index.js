@@ -1,0 +1,1 @@
+export {default as CaruselInfoModal} from './CaruselInfoModal'

@@ -1,4 +1,5 @@
 import { Button } from '@mui/material';
+import { CaruselInfoModal } from 'shared/ui';
 import styles from './styles.module.scss'
 
 
@@ -23,6 +24,7 @@ function Info() {
             <div className={styles.line} ></div>
             <div className={styles.restourantField}>
                 <div className={styles.leftSection}>
+                    <CaruselInfoModal/>
                     <button className={styles.infoFoto}>
                         <img src='https://idei.club/uploads/posts/2022-03/1647411980_2-idei-club-p-interer-paba-v-irlandskom-stile-interer-kr-4.jpg' className={styles.infoFoto} alt='foto' />
                     </button>
