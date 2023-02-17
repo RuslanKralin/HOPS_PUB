@@ -1,6 +1,17 @@
 import { Button } from '@mui/material';
-import { CaruselInfoModal } from 'shared/ui';
+import { Carousel } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import React from 'react';
+
 import styles from './styles.module.scss'
+import img1 from 'assets/slader1/img1.jpg'
+import img2 from 'assets/slader1/img2.jpg'
+import img3 from 'assets/slader1/img3.jpg'
+import img4 from 'assets/slader1/img4.jpg'
+import img5 from 'assets/slader2/img5.jpg'
+import img6 from 'assets/slader2/img6.jpg'
+import img7 from 'assets/slader2/img7.jpg'
+import img9 from 'assets/slader2/img9.jpg'
 
 
 function Info() {
@@ -15,33 +26,109 @@ function Info() {
             </div>
             <div className={styles.line} ></div>
             <div className={styles.btnField}>
-                <div><Button variant="contained" sx={{ background: '#002420', width: '12rem', height: '3rem', color: '#fffaf0', fontSize: '1.5rem', fontSize: '1rem', borderRadius: '0px',lineHeight: '110%' }} >ЗАБРОНИРОВАТЬ СТОЛ</Button></div>
-                <div><Button variant="contained" sx={{ background: '#002420', width: '12rem', height: '3rem', color: '#fffaf0', fontSize: '1.5rem', fontSize: '1rem', borderRadius: '0px',lineHeight: '110%' }}>АДРЕСА НА КАРТЕ</Button></div>
-                <div><Button variant="contained" sx={{ background: '#002420', width: '12rem', height: '3rem', color: '#fffaf0', fontSize: '1.5rem', fontSize: '1rem', borderRadius: '0px',lineHeight: '110%' }}>ОСТАВИТЬ ОТЗЫВ</Button></div>
+                <div><Button variant="contained" sx={{ background: '#002420', width: '12rem', height: '3rem', color: '#fffaf0', fontSize: '1.5rem', fontSize: '1rem', borderRadius: '0px', lineHeight: '110%' }} >ЗАБРОНИРОВАТЬ СТОЛ</Button></div>
+                <div><Button variant="contained" sx={{ background: '#002420', width: '12rem', height: '3rem', color: '#fffaf0', fontSize: '1.5rem', fontSize: '1rem', borderRadius: '0px', lineHeight: '110%' }}>АДРЕСА НА КАРТЕ</Button></div>
+                <div><Button variant="contained" sx={{ background: '#002420', width: '12rem', height: '3rem', color: '#fffaf0', fontSize: '1.5rem', fontSize: '1rem', borderRadius: '0px', lineHeight: '110%' }}>ОСТАВИТЬ ОТЗЫВ</Button></div>
 
 
             </div>
             <div className={styles.line} ></div>
             <div className={styles.restourantField}>
-                <div className={styles.leftSection}>
-                    <CaruselInfoModal/>
-                    <button className={styles.infoFoto}>
-                        <img src='https://idei.club/uploads/posts/2022-03/1647411980_2-idei-club-p-interer-paba-v-irlandskom-stile-interer-kr-4.jpg' className={styles.infoFoto} alt='foto' />
-                    </button>
-                    <div className={styles.restourantDescr}>
-                        <h3 className={styles.infoRestLeft}>г.Минск, ул. Колесникова, 38</h3>
-                        <p className={styles.infoRestLeft}>Время работы: 11.00 - 23.00 </p>
-                    </div>
-                </div>
-                <div className={styles.rightSection}>
-                    <button className={styles.infoFoto}>
-                        <img src='https://idei.club/uploads/posts/2022-03/thumbs/1647412005_9-idei-club-p-interer-paba-v-irlandskom-stile-interer-kr-13.jpg' className={styles.infoFoto} alt='foto' />
-                    </button>
-                    <div className={styles.restourantDescr}>
-                        <h3 className={styles.infoRestRight}>г.Минск, ул.Кульман, 4</h3>
-                        <p className={styles.infoRestRight}>Время работы: 11.00 - 23.00 </p>
-                    </div>
-                </div>
+                <section className={styles.left}>
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                                className='d-block w-100'
+                                src={img1}
+                                alt='slide1'
+                            />
+                            <Carousel.Caption>
+                                <h3>Колесникова, 38</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item >
+                        <Carousel.Item>
+                            <img
+                                className='d-block w-100'
+                                src={img2}
+                                alt='slide2'
+                            />
+                            <Carousel.Caption>
+                                <h3>Колесникова, 38</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item >
+                            <img
+                                className='d-block w-100'
+                                src={img3}
+                                alt='slide3'
+                            />
+                            <Carousel.Caption>
+                                <h3>Колесникова, 38</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item >
+                            <img
+                                className='d-block w-100'
+                                src={img4}
+                                alt='slide3'
+                            />
+                            <Carousel.Caption>
+                                <h3>Колесникова, 38</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    <div><h5 className={styles.title}>Время работы:</h5></div>
+                    <div><h5 className={styles.time}>11.00 - 23.00 Вс-Чт</h5></div>
+                    <div><h5 className={styles.time}>11.00 - 02.00 Пт-Сб</h5></div>
+
+                </section>
+                <section className={styles.right}>
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                                className='d-block w-100'
+                                src={img5}
+                                alt='slide1'
+                            />
+                            <Carousel.Caption>
+                                <h3>Кульман, 4</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item >
+                        <Carousel.Item>
+                            <img
+                                className='d-block w-100'
+                                src={img6}
+                                alt='slide2'
+                            />
+                            <Carousel.Caption>
+                                <h3>Кульман, 4</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item >
+                            <img
+                                className='d-block w-100'
+                                src={img7}
+                                alt='slide3'
+                            />
+                            <Carousel.Caption>
+                                <h3>Кульман, 4</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                        <Carousel.Item >
+                            <img
+                                className='d-block w-100'
+                                src={img9}
+                                alt='slide3'
+                            />
+                            <Carousel.Caption>
+                                <h3>Кульман, 4</h3>
+                            </Carousel.Caption>
+                        </Carousel.Item>
+                    </Carousel>
+                    <div><h5 className={styles.title}>Время работы:</h5></div>
+                    <div><h5 className={styles.time}>11.00 - 23.00 Вс-Чт</h5></div>
+                    <div><h5 className={styles.time}>11.00 - 01.00 Пт-Сб</h5></div>
+                </section>
             </div>
         </div>
 

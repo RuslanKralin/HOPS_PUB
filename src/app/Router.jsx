@@ -1,4 +1,4 @@
-import { Home, Menu, Restaurant, NotFound } from 'pages';
+import { Home, Menu, Restaurant, NotFound, Brewery } from 'pages';
 import { Routes, Route } from 'react-router-dom';
 import { ROUTES } from 'shared/consts/routes';
 

@@ -1,7 +1,7 @@
 .stocksWrapper{
     background-color: #002420;
     margin: 0;
-    padding-bottom: 12rem;
+    padding-bottom: 8rem;
 }
 
 .title{
@@ -11,4 +11,19 @@
     padding-top: 5rem;
     margin-top: 0;
     padding-bottom: 5rem;
+}
+
+.stocks{
+    display: flex;
+    justify-content: space-around;
+}
+
+.stockItem{
+    max-width: 200px;
+    max-height: 320px;
+}
+
+.stockItem:hover{
+    transform: translate(0,-10px);
+    transition: all 0.2s ease 0s;
 }
