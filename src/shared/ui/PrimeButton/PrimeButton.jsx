@@ -1,12 +1,12 @@
 import styles from './styles.module.scss'
 
-function PrimeButton() {
+function PrimeButton({title, style, onClick}) {
     return (
-        <div className={styles.central}><button className={styles.btn}>КНОПКА</button></div> 
-
-
-
-
+        <button 
+        onClick={onClick}
+        className={styles.btn}
+        style={style}
+        >{title}</button>
     );
 }
 

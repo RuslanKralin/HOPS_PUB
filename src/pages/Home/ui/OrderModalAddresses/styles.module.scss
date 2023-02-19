@@ -1,55 +1,38 @@
+
 .wrapper{
     position: absolute;
-    top: 67%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(244, 242, 239);
-    min-width: 400px;
-    min-height: 320px;
+    min-width: 800px;
+    min-height: 200px;
     border: 2px solid #002420;
     box-shadow: 24;
     display: flex;
- 
+    gap: 30px;
     flex-direction:column;
     text-align: center;
     z-index: 5;
 }
 
-.forms{
-    padding: 50px 30px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-}
 .info{
+    font-size: 30px;
     color: #002420;
-    padding: 5px ;
+    padding: 10px ;
     text-align: center;
     font-family: initial;
 }
 
-.logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 350px;
-    opacity: 0.1;
-}
-
-.field{
-   margin-top: 30px;
-   
-}
-
-
 .closeIcon{
     position: absolute;
-    right: -3%;
-    font-size: 60px;
+    right: 0.5%;
+    font-size: 40px;
     cursor: pointer;
     color: #002420;
-    padding-bottom: 20px;
 }
 
+.btnWrapper{
+    display: flex;
+    justify-content: space-between;
+}

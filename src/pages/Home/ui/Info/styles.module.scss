@@ -18,7 +18,11 @@
     max-width:100%;
 }
 
-.time, .title{
+.titleInfo{
+    font-size: 2rem;
+    padding-bottom: 3rem;
+}
+.time, .titleInfo{
     font-family: italic;
     text-align: center;
 }

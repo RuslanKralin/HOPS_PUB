@@ -1,4 +1,3 @@
-import { Button } from '@mui/material';
 import { Carousel } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React from 'react';
@@ -12,25 +11,24 @@ import img5 from 'assets/slader2/img5.jpg'
 import img6 from 'assets/slader2/img6.jpg'
 import img7 from 'assets/slader2/img7.jpg'
 import img9 from 'assets/slader2/img9.jpg'
+import { PrimeButton } from 'shared/ui';
 
 
 function Info() {
     return (
         <div className={styles.infoWrapper}>
             <div className={styles.descriptionField}>
-                <div className={styles.title}>Добро пожаловать в Хоспер Хопс Паб</div>
+                <div className={styles.titleInfo}>Добро пожаловать в Хоспер Хопс Паб</div>
                 <div className={styles.descrip}>
                     <p>Место в Минске, где вы можете попробовать ароматный стейк из испанской печи, выпить настоящего крафта и наблюдать матч своей любимой команды</p>
                 </div>
-                <div className={styles.title} >Пей, ешь и кайфуй</div>
+                <div className={styles.titleInfo} >Пей, ешь и кайфуй</div>
             </div>
             <div className={styles.line} ></div>
             <div className={styles.btnField}>
-                <div><Button variant="contained" sx={{ background: '#002420', width: '12rem', height: '3rem', color: '#fffaf0', fontSize: '1.5rem', fontSize: '1rem', borderRadius: '0px', lineHeight: '110%' }} >ЗАБРОНИРОВАТЬ СТОЛ</Button></div>
-                <div><Button variant="contained" sx={{ background: '#002420', width: '12rem', height: '3rem', color: '#fffaf0', fontSize: '1.5rem', fontSize: '1rem', borderRadius: '0px', lineHeight: '110%' }}>АДРЕСА НА КАРТЕ</Button></div>
-                <div><Button variant="contained" sx={{ background: '#002420', width: '12rem', height: '3rem', color: '#fffaf0', fontSize: '1.5rem', fontSize: '1rem', borderRadius: '0px', lineHeight: '110%' }}>ОСТАВИТЬ ОТЗЫВ</Button></div>
-
-
+                <PrimeButton title='кнопка'/>
+                <PrimeButton title='кейтеринг'/>
+                <PrimeButton title='отзыв'/>
             </div>
             <div className={styles.line} ></div>
             <div className={styles.restourantField}>

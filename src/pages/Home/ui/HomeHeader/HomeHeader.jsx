@@ -15,13 +15,16 @@ import { SignUpModal } from '../SignUpModal'
 import { SignInModal } from '../SignInModal'
 import { useState } from 'react'
 import { PrimeButton } from 'shared/ui'
-// import { SignInModal } from '../SignInModal'
+import OrderModalAddresses from '../OrderModalAddresses/OrderModalAddresses'
+
+
+
 
 function HomeHeader() {
     const [openSignUp, setOpenSignUp] = useState(false);
     const [openSignIn, setOpenSignIn] = useState(false);
-    // const handleOpen = () => setOpen(true);
-    // const handleClose = () => setOpen(false);
+    const [openOrderModal, setOpenOrderModal] = useState(false);
+
 
     return (
         <div className={styles.wrapper}>
@@ -59,13 +62,20 @@ function HomeHeader() {
                     </div>
                     <div className={styles.registrationField}>
 
-                        {/* <Button variant="outlined" color="inherit" sx={{ width: '4rem', height: '1.5rem', fontSize: '0.8rem' }}>Вход</Button> */}
 
-                        <Button onClick={()=>setOpenSignIn(true)} variant="outlined" color="inherit" sx={{ width: '4rem', height: '1.5rem', fontSize: '0.8rem' }}>Вход</Button>
-                        <Button onClick={()=>setOpenSignUp(true)} variant="outlined" color="inherit" sx={{ width: '7rem', height: '1.5rem', fontSize: '0.8rem' }}>РЕГИСТРАЦИЯ</Button>
-                        {openSignIn && <SignInModal openSignIn={openSignIn} setOpenSignIn={setOpenSignIn}/>}
+                        <Button onClick={() => {
+                            setOpenSignIn(true)
+                            setOpenSignUp(false)
+                        }}
+                            variant="outlined" color="inherit" sx={{ width: '4rem', height: '1.5rem', fontSize: '0.8rem' }}>Вход</Button>
+                        <Button onClick={() => {
+                            setOpenSignUp(true)
+                            setOpenSignIn(false)
+                        }}
+                            variant="outlined" color="inherit" sx={{ width: '7rem', height: '1.5rem', fontSize: '0.8rem' }}>РЕГИСТРАЦИЯ</Button>
+                        {openSignIn && <SignInModal openSignIn={openSignIn} setOpenSignIn={setOpenSignIn} />}
                         {openSignUp && <SignUpModal openSignUp={openSignUp} setOpenSignUp={setOpenSignUp} />}
-                        
+
 
                     </div>
 
@@ -77,11 +87,12 @@ function HomeHeader() {
                     В ПЕЧИ JOSPER
                 </div>
                 <div className={styles.btn}>
-                    {/* <PrimeButton/> */}
-                    <Button variant="contained" disableElevation sx={{ background: '#c32a2a', width: '15rem', height: '4rem' }}>
-                        <div className={styles.textBtn}>ЗАБРОНИРОВАТЬ СТОЛ</div>
-                    </Button>
+                    <PrimeButton onClick={() => setOpenOrderModal(true)}
+                        title='забронировать стол' style={{ 'width': '350px' }} />
+                    {openOrderModal && <OrderModalAddresses openOrderModal={openOrderModal} setOpenOrderModal={setOpenOrderModal} />}
                 </div>
+
+
                 <div className={styles.advertisingField}>
                     <div className={styles.advertisingIcon}>
                         <div><CiBeerMugFull className={styles.icon} /></div>
