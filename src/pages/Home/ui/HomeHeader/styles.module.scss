@@ -79,8 +79,16 @@ letter-spacing: .01em;
 color: #fffaf0;
 text-decoration: none;
 font-size: 1rem;
+border-bottom: 0px solid #fffaf0;
+transition: .2s;
 
 }
+
+.linkItem:hover{
+    color: #fffaf0;
+    border-bottom: 1px solid #fffaf0;
+}
+
 
 .fullScreenTitle{
     font-size: 40px;

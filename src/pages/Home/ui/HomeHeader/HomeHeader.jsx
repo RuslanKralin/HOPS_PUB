@@ -15,7 +15,7 @@ import { SignUpModal } from '../SignUpModal'
 import { SignInModal } from '../SignInModal'
 import { useState } from 'react'
 import { PrimeButton } from 'shared/ui'
-import OrderModalAddresses from '../OrderModalAddresses/OrderModalAddresses'
+import OrderModalAddresses from '../../../../shared/ui/OrderModalAddresses/OrderModalAddresses'
 
 
 
