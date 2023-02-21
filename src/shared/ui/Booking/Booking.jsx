@@ -23,7 +23,7 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal}) {
     })
     const [openCalendar, setOpenCalendar] = useState(false);//calendar
     const [value, onChange] = useState(new Date());//calendar
-
+     
 
     return (
 
@@ -64,7 +64,7 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal}) {
                         <FormInput name='name' label='Имя' />
                         <FormInput name='secondName' label='Фамилия' />
                         <FormInput name='phone' label='Телефон' />
-                        <FormInput name='date' label='На какую дату' onClick={()=>setOpenCalendar(true)}/>
+                        <FormInput value={value} name='date' label='На какую дату' onClick={()=>setOpenCalendar(true)} />
                         {openCalendar && <Calendar onChange={onChange} value={value} />}
                         <FormInput name='time' label='Время' />
                         <FormInput name='number' label='Количество гостей' />

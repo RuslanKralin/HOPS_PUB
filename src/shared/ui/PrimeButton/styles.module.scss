@@ -1,8 +1,8 @@
 .btn{
     border: 1px solid #002420;
-    background-color: #fffaf0;
+    background-color: #002420;
     font-size: 30px;
-    color: #002420;
+    color: #fffaf0;
     text-transform: uppercase;
     width: 250px;
     height: 60px;
@@ -18,8 +18,8 @@
     content: '';
     width: 100%;
     height: 100%;
-    background: #002420;
-    top: -100%;
+    background: #fffaf0;
+    bottom: -100%;
     left: 0;
     opacity: 0.5;
     transition: 0.3s;
@@ -32,13 +32,13 @@
     transition-delay: 0.2s;
 }
 .btn:hover{
-    color: #fffaf0;
+    color: #002420;
     z-index: 1;
 }
 
 .btn:hover::before,
 .btn:hover::after{
-    top: 0;
+    bottom: 0;
     
 
 } 
