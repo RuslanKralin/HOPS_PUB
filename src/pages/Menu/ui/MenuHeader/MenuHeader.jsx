@@ -2,27 +2,29 @@ import styles from './styles.module.scss'
 import menuHeader from 'assets/backgraund/menuHeader.jpg'
 // import { Button } from '@mui/material'
 import logoDark from 'assets/backgraund/logoDark.png'
+import { SlBasket } from 'react-icons/sl';
+import { Basket } from 'shared/ui';
+import { useState } from 'react';
 
 function MenuHeader() {
+    let [openBasket, setOpenBasket] = useState(false)
 
     return (
         <div className={styles.wrapper}>
             <div className={styles.headerSection}>
                 <div className={styles.limitedConteiner}>
-                    <img src={logoDark} className={styles.logo} alt="logo"/>
+                    <div><img src={logoDark} className={styles.logo} alt="logo" /></div>
                 </div>
+                <div onClick={() => setOpenBasket(openBasket = !openBasket)} className={`${styles.cardIcon} ${openBasket && styles.active}`} ><SlBasket style={{ fontSize: 40, color: 'white' }} /></div>
+                {openBasket && <Basket />}
             </div>
             <div className={styles.headerImg}>
-                <img src={menuHeader} className={styles.img} alt="logo" />
+                <div><img src={menuHeader} className={styles.img} alt="logo" /></div>
             </div>
             <div className={`${styles.headerInfo} ${styles.limitedConteiner} ${styles.headerInfoContent}`}>
                 <div className={styles.title}>Меню</div>
             </div>
-            {/* <div className={styles.btn}>
-                <Button variant="contained" disableElevation sx={{ background: '#c32a2a', width: '10rem', height: '2rem' }}>
-                    <div className={styles.textBtn}>ЗАБРОНИРОВАТЬ СТОЛ</div>
-                </Button>
-            </div> */}
+
             <div className={`${styles.headerNavBar} ${styles.limitedConteiner}`}>
                 <div className={styles.food}>
                     <div className={styles.foodLink}>Салаты и закуски</div>

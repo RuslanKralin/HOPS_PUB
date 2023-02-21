@@ -11,6 +11,7 @@
 .logo{
     width: 200px;
 }
+
 .headerImg{
     position: relative;
     z-index: 1;
@@ -18,12 +19,12 @@
 
 .headerInfo{
     position: absolute;
-    top: 30%;
+    top: 22%;
     left: 0%;
     object-fit: cover;
     z-index: 2;
-
 }
+
 .headerInfoContent{
     display: flex;
     justify-content:space-between;
@@ -35,35 +36,27 @@
     font-weight: 900;
 }
 
-// .btn{
-//     position: absolute;
-//     top: 16%;
-//     left: 0%;
-//     object-fit: cover;
-//     z-index: 2;
-//     margin-left: 250%;
-// }
-
 .textBtn{
     font-size: 0.6rem;
 }
 
-
-
 .limitedConteiner{
     padding-left: 150px;
     padding-right: 150px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .headerSection{
     display: flex;
     height: 80px;
     align-items: center;
+    justify-content: space-between; 
+    padding-right: 150px;
 }
 
 .headerNavBar{
     position: sticky;
-    // position: fixed;
     background-color: #fffaf0;
     display: flex;
     justify-content: space-between;
@@ -79,10 +72,10 @@
     font-weight: 800;
     letter-spacing: 0.001em;
 }
+
 .foodLink:hover{
     border-bottom: 5px solid #2b4fb9;
     margin: 0px;
-    
     cursor: pointer;
 }
 
@@ -109,10 +102,10 @@
     align-items: center;
     gap: 8px;
 }
+
 .barLink{
     cursor: pointer;
     border: 2px solid #002420;
-    // background-color: #002420 ;
     color: #002420;
     border: none;
     border-radius: 32px;
@@ -124,4 +117,22 @@
     display: flex;
     align-items: center;
     gap: 8px;
+}
+
+.cardIcon{
+    position: relative;
+    border: 1px solid #002420;
+    border-radius: 50%;
+    padding: 10px 10px;
+    background-color: #002420;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.cardIcon:hover{
+    background-color:coral;
+}
+
+.active{
+    background-color:coral; 
 }

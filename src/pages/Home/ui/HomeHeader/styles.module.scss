@@ -3,8 +3,6 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    // background-color: black; 
-    
 }
 
 .fullScreen{
@@ -13,35 +11,27 @@
     display: flex;
     flex-direction: column;
     padding: 50px 15px; 
-    
 }
+
 .fullScreenFoto {
-     
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    
 }
 
 .fullScreenBody{
-    // background-color: black;
     position: relative;
     z-index: 2;
     width: 100%;
     box-sizing: border-box;
-    padding-top: 2.4vw;
-    padding-bottom: 18.4vw;
+    padding-bottom: 14.4vw;
     padding-left: 2vw;
     padding-right: 2vw;
     pointer-events: auto;
-
-   
     display: flex;
-  
-  
     justify-content: space-between;
     align-items: center;
  }
@@ -51,6 +41,7 @@
     flex-direction: column;
     align-items: center;
 }
+
 .logo{
     width: 400px;
     margin-bottom: 20px;
@@ -114,11 +105,9 @@ transition: .2s;
     cursor: pointer;
     height: 1rem;
     width: 1rem;
-
 }
 
 .title{
-    
     color: #fffaf0;
     z-index: 1;
     text-align: center;
@@ -132,7 +121,6 @@ transition: .2s;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5rem;
-    /* min-width: 15rem; */
 }
 
 .advertisingField{
@@ -144,27 +132,19 @@ transition: .2s;
     z-index: 2;  
     display: flex;
     justify-content: space-around;
-    padding: 1.4rem 0;
- 
-   
-
+    padding: 1.3rem 0;
 }
 
 .advertisingIcon{
     display: flex;
    align-items: center;
-   /* justify-content: center; */
-  
-    /* overflow: hidden; */
 }
 
 .icon{
-
  width: 4em;
  height: 4em;
  border: 2px solid #002420;
  border-radius: 50%;
- /* shape-inside: circle(50% at center center); */
  margin-left: auto;
  margin-right: auto;
  background-color: #002420;

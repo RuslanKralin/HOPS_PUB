@@ -22,6 +22,7 @@
     font-size: 2rem;
     padding-bottom: 3rem;
 }
+
 .time, .titleInfo{
     font-family: italic;
     text-align: center;
@@ -42,15 +43,12 @@
 
 .btnField{
     display: flex;
-    // justify-content: space-around;
     gap: 18rem;
     margin-bottom: 4rem;
     box-sizing:border-box;
     width:auto;
     max-width:100%;
 }
-
-
 
 .restourantField{
     display: flex;
@@ -63,14 +61,12 @@
     height: 35rem;
     cursor: pointer;
     background-color: #897e47;
-    
 }
 
 .left{
     width: 45rem;
     height: 35rem;
     cursor: pointer;
-    // background-color: #002420;
 }
 
 .infoFoto{
@@ -78,10 +74,12 @@
     height: 35rem;
     cursor: pointer;
 }
+
 .infoRestLeft{
-    padding-top: 30px;
     font-size: 1.5rem;
+    padding-top: 30px;
 }
+
 .infoRestRight{
     font-size: 1.5rem;
     padding-top: 30px;

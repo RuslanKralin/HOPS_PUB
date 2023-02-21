@@ -351,7 +351,6 @@ function FoodMenu() {
                         <div className={styles.weight}><p>Выход: 280гр</p></div>
                     </div>
                 </div>
-                
             </div>
         </div>
     )

@@ -1,5 +1,4 @@
 import styles from './styles.module.scss'
-// import foto from 'assets/backgraund/foto.jpg'
 import primeHomePhoto from 'assets/backgraund/primeHomePhoto.jpg'
 import logoLight from 'assets/backgraund/logoLight.png'
 import { FiFacebook, FiTwitter } from 'react-icons/fi'

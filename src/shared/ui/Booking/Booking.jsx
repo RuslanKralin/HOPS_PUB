@@ -21,9 +21,16 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal}) {
         secondName: yup.string().typeError('Только буквы').required('Обязательно'),
       
     })
+
     const [openCalendar, setOpenCalendar] = useState(false);//calendar
-    const [value, onChange] = useState(new Date());//calendar
-     
+    const [date, setDate] = useState(new Date());//calendar
+    const [label, setLabel] = useState('На какую дату');//calendar
+
+     const onChange = (date) =>{
+        setDate(date)
+        setOpenCalendar(false)
+        setLabel() 
+     }
 
     return (
 
@@ -64,8 +71,9 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal}) {
                         <FormInput name='name' label='Имя' />
                         <FormInput name='secondName' label='Фамилия' />
                         <FormInput name='phone' label='Телефон' />
-                        <FormInput value={value} name='date' label='На какую дату' onClick={()=>setOpenCalendar(true)} />
-                        {openCalendar && <Calendar onChange={onChange} value={value} />}
+                        {openCalendar && <Calendar onChange={onChange} value={date} />}
+                        {console.log(date)}
+                        <FormInput name='date' label='На какую дату' onClick={()=>setOpenCalendar(true)} />
                         <FormInput name='time' label='Время' />
                         <FormInput name='number' label='Количество гостей' />
                         
