@@ -29,6 +29,30 @@ const DataProduct = {
             image: foto3,
             weight: 390
         },
+        {
+            id: '4',
+            name: 'Ростбиф салат',
+            price: 19,
+            descr: 'Листья салата, говяжья вырезка на углях, заправка',
+            image: foto2,
+            weight: 290
+        },
+        {
+            id: '5',
+            name: 'Цезарь с курицей',
+            price: 22,
+            descr: 'Листья салата, филе куриное на углях, заправка',
+            image: foto2,
+            weight: 350
+        },
+        {
+            id: '6',
+            name: 'Red & White',
+            price: 19,
+            descr: 'Листья салата, филе лосося, филе трески, заправка',
+            image: foto3,
+            weight: 390
+        },
     ]
 }
 
