@@ -1,13 +1,15 @@
 import styles from './styles.module.scss'
 import menuHeader from 'assets/backgraund/menuHeader.jpg'
-// import { Button } from '@mui/material'
 import logoDark from 'assets/backgraund/logoDark.png'
 import { SlBasket } from 'react-icons/sl';
 import { Basket } from 'shared/ui';
 import { useState } from 'react';
+// import { DataProduct } from 'app/DataProduct';
 
-function MenuHeader() {
-    let [openBasket, setOpenBasket] = useState(false)
+function MenuHeader({ openBasket, setOpenBasket, productItem, setProductItems, onAdd, onRemove, countCartItems }) {
+    // const { products } = DataProduct;
+
+
 
     return (
         <div className={styles.wrapper}>
@@ -15,8 +17,14 @@ function MenuHeader() {
                 <div className={styles.limitedConteiner}>
                     <div><img src={logoDark} className={styles.logo} alt="logo" /></div>
                 </div>
-                <div onClick={() => setOpenBasket(openBasket = !openBasket)} className={`${styles.cardIcon} ${openBasket && styles.active}`} ><SlBasket style={{ fontSize: 40, color: 'white' }} /></div>
-                {openBasket && <Basket />}
+                <div onClick={() => setOpenBasket(openBasket = !openBasket)}
+                    className={`${styles.cardIcon}
+                    ${openBasket && styles.active}`} >
+                    <SlBasket style={{ fontSize: 40, color: 'white' }} />
+                </div>
+                <div>{countCartItems && <div>{countCartItems}</div>}</div>
+                {openBasket && <Basket onAdd={onAdd} onRemove={onRemove} productItem={productItem} />}
+                {console.log(typeof (onAdd))}
             </div>
             <div className={styles.headerImg}>
                 <div><img src={menuHeader} className={styles.img} alt="logo" /></div>

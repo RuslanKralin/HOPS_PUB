@@ -2,8 +2,9 @@ import styles from './styles.module.scss'
 import React from 'react';
 
 
-function ProductItem(props) {
-    const { product } = props;
+function ProductItem({ product, onAdd }) {
+    // const { product, onAdd } = props;
+    
     return (
         <div className={styles.foodItem}>
             <div >
@@ -15,7 +16,8 @@ function ProductItem(props) {
                 <div className={styles.compound}><p>{product.descr}</p></div>
                 <div className={styles.foodItemFooter}>
                     <div className={styles.weight}><p>Выход: {product.weight} гр</p></div>
-                    <button className={styles.btn}>Добавить в корзину</button>
+                   { console.log(onAdd)}
+                    <button onClick={()=> onAdd(product)}  className={styles.btn}>Добавить в корзину</button>
                 </div>
 
             </div>
