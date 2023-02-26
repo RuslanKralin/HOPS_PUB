@@ -7,9 +7,6 @@ import { useState } from 'react';
 // import { DataProduct } from 'app/DataProduct';
 
 function MenuHeader({ openBasket, setOpenBasket, productItem, setProductItems, onAdd, onRemove, countCartItems }) {
-    // const { products } = DataProduct;
-
-
 
     return (
         <div className={styles.wrapper}>
@@ -22,9 +19,9 @@ function MenuHeader({ openBasket, setOpenBasket, productItem, setProductItems, o
                     ${openBasket && styles.active}`} >
                     <SlBasket style={{ fontSize: 40, color: 'white' }} />
                 </div>
-                <div>{countCartItems && <div>{countCartItems}</div>}</div>
+                {/* <div>{countCartItems && <div>{countCartItems}</div>}</div> counter сдулаю позже*/}
                 {openBasket && <Basket onAdd={onAdd} onRemove={onRemove} productItem={productItem} />}
-                {console.log(typeof (onAdd))}
+               
             </div>
             <div className={styles.headerImg}>
                 <div><img src={menuHeader} className={styles.img} alt="logo" /></div>

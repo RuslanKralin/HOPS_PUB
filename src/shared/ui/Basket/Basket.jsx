@@ -9,7 +9,7 @@ function Basket(props) {
   return (
       
       <div className={styles.wrapper}>
-        {productItem.length === 0 ? <h2 className={styles.title}>Ваша корзина пуста</h2> : <h2 className={styles.title}>Ваша корзина</h2>}
+        {productItem.length === 0 ? <h2 className={styles.title}>Ваша корзина пуста</h2> : <h2 className={styles.title}>Ваши покупки</h2>}
 
         {productItem.map((item) => (
           <div key={item.id} className={styles.itemConteiner}>
@@ -25,10 +25,10 @@ function Basket(props) {
           </div>
         ))}
          {productItem.length !== 0 && (
-          <div>
-            <hr></hr>
-            <div>Итого</div>
-            <div>{itemsPrice} руб</div>
+          <div className={styles.resultConteiner}>
+            <hr className={styles.line}></hr>
+            <div className={styles.resultTitle}>Итого:</div>
+            <div className={styles.resultValue}>{itemsPrice} руб</div>
 
           </div>
          )}
