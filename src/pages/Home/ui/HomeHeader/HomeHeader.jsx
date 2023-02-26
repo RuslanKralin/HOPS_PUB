@@ -48,7 +48,13 @@ function HomeHeader() {
                                 <Link className={styles.linkItem} to={ROUTES.MENU}>
                                     <li>Меню</li>
                                 </Link>
-                                <li className={styles.linkItem}>Доставка</li>
+                                <li className={styles.linkItemDelivery}>Доставка</li>
+                                <div className={styles.delivery}>
+                                    <ul className={styles.deliveryLinks}>
+                                        <li className={styles.deliveryLink}><a>Деливио</a></li>
+                                        <li className={styles.deliveryLink}><a>Яндекс</a></li>
+                                    </ul>
+                                </div>
                                 <Link className={styles.linkItem} to={ROUTES.BREWERY}>
                                     <li>Пивоварня</li>
                                 </Link>

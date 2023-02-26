@@ -72,8 +72,51 @@ text-decoration: none;
 font-size: 1rem;
 border-bottom: 0px solid #fffaf0;
 transition: .2s;
-
 }
+
+
+.linkItemDelivery{
+    position: relative;
+    margin-left: 2rem;
+    list-style-type: none;
+    font-weight: 700;
+    letter-spacing: .01em;
+    color: #fffaf0;
+    text-decoration: none;
+    font-size: 1rem;
+    border-bottom: 0px solid #fffaf0;
+    transition: .2s;
+}
+
+.delivery{
+    position: absolute;
+    bottom: 135px;
+    left: 600px;
+    width: 100px;
+    height: 100px;
+    background-color: #002420;
+    color:#fffaf0 ;
+}
+
+.deliveryLinks{
+    padding: 10px;
+}
+
+.deliveryLink{
+    text-decoration: none;
+    text-transform: uppercase;
+    list-style-type: none;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #002420
+}
+
+a{
+    border-bottom: 2px solid #002420  
+}
+ a:hover{
+    border-bottom: 2px solid #fffaf0
+}
+
 
 .linkItem:hover{
     color: #fffaf0;
