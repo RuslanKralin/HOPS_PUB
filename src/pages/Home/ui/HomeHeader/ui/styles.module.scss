@@ -1,0 +1,75 @@
+*,*::before, *:after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.menu a{
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.menu li{
+    list-style: none;
+    position: relative;
+}
+
+.menuList{
+    display: flex;
+}
+
+.menuList>li{
+margin: 0px 20px 0px 0px;
+}
+
+.menuList>li:hover .subMenuList{
+display: block;
+}
+
+
+.menuLink{
+    color: #fffaf0;
+}
+
+.subMenuList{
+position: absolute;
+left: 0;
+top: 20px;
+padding: 20px  0px 0px 0px;
+display: none;
+}
+
+.subMenuLink{
+    color: #fffaf0;
+   
+}
+
+.subMenuList>li{
+    background-color: #002420;
+    min-width: 150px;
+}
+
+.subMenuList>li:hover .subSubMenuList{
+display: block;
+min-width: 200px;
+}
+
+
+.subSubMenuList{
+    position: absolute;
+    top: 0;
+    left: 100%;
+    padding: 0px 0px 0px 3px;
+    display: none;
+}
+
+.subSubMenuList>li{
+    background-color: #002420;
+    
+}
+
+.subSubMenuLink{
+    color: #fffaf0;
+}
+

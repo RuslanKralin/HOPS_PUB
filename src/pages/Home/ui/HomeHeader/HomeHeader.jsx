@@ -15,6 +15,7 @@ import { SignInModal } from '../SignInModal'
 import { useState } from 'react'
 import { PrimeButton } from 'shared/ui'
 import OrderModalAddresses from '../../../../shared/ui/OrderModalAddresses/OrderModalAddresses'
+import { NavBar } from './ui'
 
 
 
@@ -41,7 +42,8 @@ function HomeHeader() {
                             <img src={logoLight} className={styles.logo} alt="logo" />
                         </div>
                         <div className={styles.fullScreenLinks}>
-                            <ul className={styles.navLinks}>
+                            <NavBar />
+                            {/* <ul className={styles.navLinks}>
                                 <Link className={styles.linkItem} to={ROUTES.RESTAURANT}>
                                     <li>Рестораны</li>
                                 </Link>
@@ -49,20 +51,13 @@ function HomeHeader() {
                                     <li>Меню</li>
                                 </Link>
                                 <li className={styles.linkItemDelivery}>Доставка</li>
-                                <div className={styles.delivery}>
-                                    <ul className={styles.deliveryLinks}>
-                                        <li className={styles.deliveryLink}><a>Деливио</a></li>
-                                        <li className={styles.deliveryLink}><a>Яндекс</a></li>
-                                    </ul>
-                                </div>
                                 <Link className={styles.linkItem} to={ROUTES.BREWERY}>
                                     <li>Пивоварня</li>
                                 </Link>
-
                                 <li className={styles.linkItem}>Магазины</li>
                                 <li className={styles.linkItem}>Акции</li>
                                 <li className={styles.linkItem}>Контакты</li>
-                            </ul>
+                            </ul> */}
                         </div>
                     </div>
                     <div className={styles.registrationField}>
