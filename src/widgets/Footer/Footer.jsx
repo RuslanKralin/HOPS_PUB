@@ -8,7 +8,7 @@ function Footer() {
     return (
         <footer className={styles.footerWrapper}>
             <img src={logoLight} className={styles.logo} alt='logo'/>
-            <h3 className={styles.secondTitle}>Контакты</h3>
+            <h3 id='contacts' className={styles.secondTitle}>Контакты</h3>
             <div className={styles.contactsItem}>
                 <div className={styles.contactItem}>
                    

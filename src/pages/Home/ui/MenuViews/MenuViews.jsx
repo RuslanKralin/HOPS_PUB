@@ -9,7 +9,7 @@ function MenuViews() {
         <div className={styles.menuWrapper}>
             <div className={styles.leftSection}>
                 <Link to={ROUTES.MENU}>
-                    <button className={styles.menuBtnLeft}> FOOD
+                    <button  className={styles.menuBtnLeft}>FOOD
                     </button>
                 </Link>
 

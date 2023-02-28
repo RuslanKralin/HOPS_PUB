@@ -9,7 +9,7 @@ import { Basket } from 'shared/ui';
 function MenuHeader({ openBasket, setOpenBasket, productItem, setProductItems, onAdd, onRemove, countCartItems }) {
 
     return (
-        <div className={styles.wrapper}>
+        <div id='food' className={styles.wrapper}>
             <div className={styles.headerSection}>
                 <div className={styles.limitedConteiner}>
                     <div><img src={logoDark} className={styles.logo} alt="logo" /></div>

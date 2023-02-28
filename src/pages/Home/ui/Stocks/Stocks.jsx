@@ -12,8 +12,8 @@ import stock7 from 'assets/stock/stock7.jpg'
 function Stocks() {
     return (
         <div className={styles.stocksWrapper}>
-           <h1 className={styles.title}>Акции</h1>
-           <div className={styles.stocks}>
+           <h1 id='stock' className={styles.title}>Акции</h1>
+           <div  className={styles.stocks}>
                <div><img className={styles.stockItem} src={stock1} alt='stock' /></div>
                <div><img className={styles.stockItem} src={stock2} alt='stock'/></div>
                <div><img className={styles.stockItem} src={stock3} alt='stock'/></div>
