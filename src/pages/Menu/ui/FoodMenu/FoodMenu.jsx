@@ -4,7 +4,7 @@ import ProductItem from './ui/ProductItem/ProductItem'
 // import { useState } from 'react';
 import { NavBarBtn } from './ui/NavBarBtn';
 
-function FoodMenu({ onAdd, handleClick, activBarLink, onClick }) {
+function FoodMenu({ onAdd, handleClick, onClick, activeBarLink  }) {
     const { products } = DataProduct;
 
     return (
@@ -17,12 +17,13 @@ function FoodMenu({ onAdd, handleClick, activBarLink, onClick }) {
                     <div className={styles.foodLink}>Супы и хлеб</div>
                 </div>
                 <div className={styles.bar}>
-                    <NavBarBtn title='Пиво' onClick={console.log('click') }
-                    // className={activBarLink ? `${styles.active}` : `${styles.barLink}`}
+                    <NavBarBtn title='Пиво' onClick={() => handleClick}
+                        className={styles.active}
+                        // className={activeBarLink ? `${styles.active}` : `${styles.barLink}`}
                     ></NavBarBtn>
-                    <NavBarBtn title='Вино'/>
-                    <NavBarBtn title='Крепкое'/>
-                    <NavBarBtn title='Коктейли'/>
+                    <NavBarBtn title='Вино' />
+                    <NavBarBtn title='Крепкое' />
+                    <NavBarBtn title='Коктейли' />
                 </div>
             </div>
 

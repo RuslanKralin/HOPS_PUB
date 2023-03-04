@@ -1,11 +1,11 @@
 import { RestaurantHeader } from "./ui/RestaurantHeader"
 import primeLogo from 'assets/backgraund/primeLogo.png'
 import styles from './styles.module.scss'
-import { PrimeButton } from "shared/ui"
+import { Booking, PrimeButton } from "shared/ui"
 import { useState } from "react"
-import { Booking } from "shared/ui/Booking"
 
-function Restaurant({ }) {
+
+function Restaurant() {
     const [openBooking, setOpenBooking] = useState(false)
 
     return <div className={styles.wrapper}>
@@ -30,7 +30,7 @@ function Restaurant({ }) {
                     onClick={() => setOpenBooking(true)}
                     title='забронировать стол' style={{ 'width': '350px', 'height': '50px', 'borderRadius': '10px' }} /></div>
             </div>
-            {openBooking && <Booking />}
+            {openBooking && <Booking openBooking={openBooking} setOpenBooking={setOpenBooking}/>}
 
             <div><img src={primeLogo} className={styles.logo} alt='logo' /></div>
             <div className={styles.right}>
@@ -41,7 +41,7 @@ function Restaurant({ }) {
                     onClick={() => setOpenBooking(true)}
                     title='забронировать стол' style={{ 'width': '350px', 'height': '50px', 'borderRadius': '10px' }} /></div>
             </div>
-            {openBooking && <Booking />}
+            {openBooking && <Booking openBooking={openBooking} setOpenBooking={setOpenBooking}/>}
         </div>
     </div>
 }

@@ -8,8 +8,6 @@ import { BiMusic } from 'react-icons/bi'
 import { GiSlicedBread } from 'react-icons/gi'
 import { MdSportsBasketball } from 'react-icons/md'
 import { Button } from '@mui/material'
-import { Link } from 'react-router-dom'
-import { ROUTES } from 'shared/consts'
 import { SignUpModal } from '../SignUpModal'
 import { SignInModal } from '../SignInModal'
 import { useState } from 'react'
@@ -43,26 +41,9 @@ function HomeHeader() {
                         </div>
                         <div className={styles.fullScreenLinks}>
                             <NavBar />
-                            {/* <ul className={styles.navLinks}>
-                                <Link className={styles.linkItem} to={ROUTES.RESTAURANT}>
-                                    <li>Рестораны</li>
-                                </Link>
-                                <Link className={styles.linkItem} to={ROUTES.MENU}>
-                                    <li>Меню</li>
-                                </Link>
-                                <li className={styles.linkItemDelivery}>Доставка</li>
-                                <Link className={styles.linkItem} to={ROUTES.BREWERY}>
-                                    <li>Пивоварня</li>
-                                </Link>
-                                <li className={styles.linkItem}>Магазины</li>
-                                <li className={styles.linkItem}>Акции</li>
-                                <li className={styles.linkItem}>Контакты</li>
-                            </ul> */}
                         </div>
                     </div>
                     <div className={styles.registrationField}>
-
-
                         <Button onClick={() => {
                             setOpenSignIn(true)
                             setOpenSignUp(false)
@@ -89,7 +70,7 @@ function HomeHeader() {
                 <div className={styles.btn}>
                     <PrimeButton onClick={() => setOpenOrderModal(true)}
                         title='забронировать стол' style={{ 'width': '350px' }} />
-                    {openOrderModal && <OrderModalAddresses openOrderModal={openOrderModal} setOpenOrderModal={setOpenOrderModal} />}
+                    {openOrderModal && <OrderModalAddresses setOpenOrderModal={setOpenOrderModal} />}
                 </div>
 
 

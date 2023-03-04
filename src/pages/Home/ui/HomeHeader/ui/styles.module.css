@@ -1,0 +1,108 @@
+*, *::before, *:after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.menu a {
+  text-decoration: none;
+}
+
+.menu li {
+  list-style: none;
+  position: relative;
+  font-size: 1rem;
+  color: #fffaf0;
+  font-style: normal;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.menuLink {
+  border-bottom: 1px solid transparent;
+  transition: 0.2s;
+  letter-spacing: 0.01em;
+}
+
+.menuLink:hover {
+  border-bottom: 1px solid #fffaf0;
+}
+
+.menuList {
+  display: flex;
+}
+
+.menuList > li {
+  margin: 0px 20px 0px 0px;
+}
+
+.menuList > li:hover .subMenuList {
+  display: block;
+}
+
+.menuLink {
+  color: #fffaf0;
+}
+
+.menuLink:hover {
+  color: #fffaf0;
+}
+
+.subMenuList {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  padding: 20px 0px 0px 0px;
+  display: none;
+  min-width: 150px;
+}
+
+.subMenuLink {
+  color: #fffaf0;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.subMenuLink:hover {
+  color: #fffaf0;
+  border-bottom: 1px solid #fffaf0;
+}
+
+.subMenuList > li {
+  background-color: #002420;
+  min-width: 150px;
+  padding: 5px 5px;
+}
+
+.subMenuList > li:hover .subSubMenuList {
+  display: block;
+  min-width: 200px;
+}
+
+.subSubMenuList {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  padding: 0px 0px 0px 3px;
+  display: none;
+}
+
+.subSubMenuList > li {
+  background-color: #002420;
+  min-width: 150px;
+  padding: 5px 5px;
+}
+
+.subSubMenuLink {
+  color: #fffaf0;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.subSubMenuLink:hover {
+  color: #fffaf0;
+  border-bottom: 1px solid #fffaf0;
+}/*# sourceMappingURL=styles.module.css.map */

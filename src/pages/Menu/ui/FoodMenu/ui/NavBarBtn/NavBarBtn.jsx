@@ -1,21 +1,22 @@
 import styles from './styles.module.scss'
 import React, { useState } from 'react';
 
-
+ 
 function NavBarBtn({ title, onClick }) {
-    const [activBarLink, setActiveBarlink] = useState(false)
+    const [activeBarLink, setActiveBarlink] = useState(false)
 
     const handleClick =() => {
-        setActiveBarlink(activBarLink => !activBarLink)
+        setActiveBarlink(activeBarLink => !activeBarLink)
     }
 
-    let toggleClassCheck = activBarLink ? 'active' : null;
+    let toggleClassCheck = activeBarLink ? 'active' : null;
 
     return (
         <button
-            className={activBarLink ? `${styles.active}` : `${styles.barLink}`}
+            className={styles.active}
+            // className={activeBarLink ? `${styles.active}` : `${styles.barLink}`}
             onClick={onClick}
-            activBarLink={activBarLink}
+            activeBarLink={activeBarLink}
             handleClick={handleClick}
             toggleClassCheck={toggleClassCheck}
         >{title}</button>

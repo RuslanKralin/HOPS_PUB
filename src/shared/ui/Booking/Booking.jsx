@@ -6,41 +6,42 @@ import { FormInput } from '../FormInput';
 import { Formik } from 'formik';
 import * as yup from 'yup'
 import 'react-calendar/dist/Calendar.css';
-import { Calendar } from 'react-calendar';
 import { useState } from 'react';
 // import primeLogo from 'assets/backgraund/primeLogo.png'
 
 
 
-function Booking({ openBooking, setOpenBooking, setOpenOrderModal}) {
+function Booking({ openBooking, setOpenBooking, setOpenOrderModal }) {
     const validationSchema = yup.object().shape({
         name: yup.string()
             .min(3, 'Слишком короткое!')
             .max(12, 'Слишком длинное!')
             .required('Обязательно'),
         secondName: yup.string().typeError('Только буквы').required('Обязательно'),
-      
+
     })
 
-    const [openCalendar, setOpenCalendar] = useState(false);//calendar
-    const [date, setDate] = useState(new Date());//calendar
-    const [label, setLabel] = useState('На какую дату');//calendar
 
-     const onChange = (date) =>{
-        setDate(date)
-        setOpenCalendar(false)
-        setLabel() 
-     }
-
+  function handleClose(){
+       if(setOpenOrderModal){
+        setOpenOrderModal(false)
+       }
+       setOpenBooking(false)
+  }
     return (
 
 
         <div className={styles.wrapper}>
 
-           
-            <AiOutlineCloseCircle className={styles.closeIcon} onClick={() => setOpenBooking(false)} />
 
-            {/* <img src={primeLogo} className={styles.logo} alt='logo' /> */}
+            <AiOutlineCloseCircle className={styles.closeIcon} onClick={() => {
+                
+                    handleClose()
+                
+            }
+            } />
+
+
 
             <Formik
                 initialValues={{
@@ -49,7 +50,7 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal}) {
                     phone: '',
                     date: '',
                     number: '',
-                  
+
 
                 }}
                 validationSchema={validationSchema}
@@ -67,16 +68,14 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal}) {
 
                     /* and other goodies */
                 }) => (
-                    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '30px', margin:'20px 0' }}>
+                    <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '30px', margin: '20px 0' }}>
                         <FormInput name='name' label='Имя' />
                         <FormInput name='secondName' label='Фамилия' />
                         <FormInput name='phone' label='Телефон' />
-                        {openCalendar && <Calendar onChange={onChange} value={date} />}
-                        {console.log(date)}
-                        <FormInput name='date' label='На какую дату' onClick={()=>setOpenCalendar(true)} />
+                        <FormInput name='date' label='На какую дату' />
                         <FormInput name='time' label='Время' />
                         <FormInput name='number' label='Количество гостей' />
-                        
+
 
 
                         <div className={styles.check}>*Администратор свяжется с Вами для уточнения деталей</div>
