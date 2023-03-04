@@ -6,9 +6,7 @@ import { FormInput } from '../FormInput';
 import { Formik } from 'formik';
 import * as yup from 'yup'
 import 'react-calendar/dist/Calendar.css';
-import { useState } from 'react';
-// import primeLogo from 'assets/backgraund/primeLogo.png'
-
+import { NativePickers } from './ui';
 
 
 function Booking({ openBooking, setOpenBooking, setOpenOrderModal }) {
@@ -28,20 +26,15 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal }) {
        }
        setOpenBooking(false)
   }
-    return (
+
+  return (
 
 
         <div className={styles.wrapper}>
-
-
             <AiOutlineCloseCircle className={styles.closeIcon} onClick={() => {
-                
                     handleClose()
-                
             }
             } />
-
-
 
             <Formik
                 initialValues={{
@@ -51,20 +44,17 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal }) {
                     date: '',
                     number: '',
 
-
                 }}
                 validationSchema={validationSchema}
                 onSubmit={(values) => {
                     console.log(values)
 
                 }}
-
             >
                 {({
                     values,// хранит все текущие значения формика
                     handleSubmit,
                     setFieldValue,
-
 
                     /* and other goodies */
                 }) => (
@@ -72,20 +62,18 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal }) {
                         <FormInput name='name' label='Имя' />
                         <FormInput name='secondName' label='Фамилия' />
                         <FormInput name='phone' label='Телефон' />
-                        <FormInput name='date' label='На какую дату' />
-                        <FormInput name='time' label='Время' />
+                        <NativePickers />
                         <FormInput name='number' label='Количество гостей' />
 
-
-
                         <div className={styles.check}>*Администратор свяжется с Вами для уточнения деталей</div>
-
-                        <div className={styles.btn}><Button onClick={handleSubmit} variant="contained" color="success" sx={{ width: '250px' }}>
+                        <div className={styles.btn}>
+                            <Button 
+                            onClick={handleSubmit}// нужно повесить функцию закрытия
+                            variant="contained"
+                            color="success"
+                            sx={{ width: '250px' }}>
                             Отправить
                         </Button></div>
-
-
-
                     </form>
                 )}
             </Formik>
