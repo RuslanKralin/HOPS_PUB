@@ -38,8 +38,9 @@
 
 .centralFieldItems{
     display: flex;
-    flex-direction: column;
+    // flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .logo{
@@ -61,66 +62,6 @@
     border-bottom: 0px solid #fffaf0;
     transition: .2s;
 }
-
-
-
-
-// .navLinks {
-//     position: relative;
-// }
-
-// .deliveryItems{
-//     position: absolute;
-//     left: 280px;
-//     top: 30px;
-//     width: 180px;
-//     background-color: #002420;
-//     display: none;
-// }
-
-// .linkItemDelivery:hover > .deliveryItems {
-//     display: initial;
-// }
-
-// .deliveryItem{
-//     position: absolute;
-//     left: 180px ;
-//     top: 0;
-// }
-
-// .delivery{
-//     position: absolute;
-//     bottom: 135px;
-//     left: 600px;
-//     width: 100px;
-//     height: 100px;
-//     background-color: #002420;
-//     color:#fffaf0 ;
-// }
-
-// .deliveryLinks{
-//     padding: 10px;
-    
-// }
-
-// .deliveryLink{
-//     text-decoration: none;
-//     text-transform: uppercase;
-//     list-style-type: none;
-//     padding-bottom: 5px;
-//     border-bottom: 2px solid #002420;
-// }
-
-// a{
-//     border-bottom: 2px solid #002420;
-//     text-decoration: none;
-      
-// }
-//  a:hover{
-//     border-bottom: 2px solid #fffaf0
-
-// }
-
 
 .linkItem:hover{
     color: #fffaf0;
@@ -205,4 +146,25 @@
 
 .textBtn{
     font-size: 1rem;
+}
+
+
+// Burger
+
+.navBarIcon{
+    display: none;
+    position: relative;
+    color: #fffaf0;
+    font-size: 40px;
+    bottom: 13px;
+    cursor: pointer;
+}
+
+@media (max-width: 1024px){
+    .navBarIcon{
+    display: block;
+    }
+    .fullScreenLinks{
+        display: none;
+    }
 }

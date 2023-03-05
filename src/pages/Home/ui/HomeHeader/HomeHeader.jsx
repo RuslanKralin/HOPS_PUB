@@ -6,6 +6,7 @@ import { FaTiktok, FaInstagram } from 'react-icons/fa'
 import { CiBeerMugFull } from 'react-icons/ci'
 import { BiMusic } from 'react-icons/bi'
 import { GiSlicedBread } from 'react-icons/gi'
+import { AiOutlineMenu } from 'react-icons/ai'
 import { MdSportsBasketball } from 'react-icons/md'
 import { Button } from '@mui/material'
 import { SignUpModal } from '../SignUpModal'
@@ -13,9 +14,8 @@ import { SignInModal } from '../SignInModal'
 import { useState } from 'react'
 import { PrimeButton } from 'shared/ui'
 import OrderModalAddresses from '../../../../shared/ui/OrderModalAddresses/OrderModalAddresses'
-import { NavBar } from './ui'
-
-
+import NavBar from './ui/NavBar/NavBar'
+import { BurgerMenu } from './ui/BurgerMenu'
 
 
 function HomeHeader() {
@@ -37,11 +37,13 @@ function HomeHeader() {
                     </div>
                     <div className={styles.centralField}>
                         <div className={styles.centralFieldItems}>
-                            <img src={logoLight} className={styles.logo} alt="logo" />
+                            <div><img src={logoLight} className={styles.logo} alt="logo" /></div>
+                            <div className={styles.navBarIcon}><AiOutlineMenu sx={{ width: '100px' }} /></div>
                         </div>
                         <div className={styles.fullScreenLinks}>
                             <NavBar />
                         </div>
+                            <BurgerMenu />
                     </div>
                     <div className={styles.registrationField}>
                         <Button onClick={() => {
