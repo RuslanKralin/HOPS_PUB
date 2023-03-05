@@ -4,13 +4,17 @@ import { ROUTES } from 'shared/consts'
 import logoLight from 'assets/backgraund/logoLight.png'
 import { AiOutlineCloseCircle } from 'react-icons/ai'
 
-function BurgerMenu() {
+function BurgerMenu({ setOpenNavBar }) {
 
     return (
         <nav className={styles.menu}>
             <ul className={styles.menuList}>
             <img src={logoLight} className={styles.logo} alt="logo" />
-            <AiOutlineCloseCircle className={styles.closeIcon} />
+            <AiOutlineCloseCircle 
+            onClick={()=>{
+                setOpenNavBar(false)
+            }}
+            className={styles.closeIcon} />
                 <li>
                     <a href={ROUTES.RESTAURANT} className={styles.menuLink}>Рестораны</a>
                 </li>

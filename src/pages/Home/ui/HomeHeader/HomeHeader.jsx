@@ -22,6 +22,7 @@ function HomeHeader() {
     const [openSignUp, setOpenSignUp] = useState(false);
     const [openSignIn, setOpenSignIn] = useState(false);
     const [openOrderModal, setOpenOrderModal] = useState(false);
+    const [openNavBar, setOpenNavBar] = useState(false);
 
 
     return (
@@ -30,20 +31,21 @@ function HomeHeader() {
             <div className={styles.fullScreen}>
                 <div className={styles.fullScreenBody}>
                     <div className={styles.socialField}>
-                        <FiFacebook className={styles.socialtem} />
-                        <FiTwitter className={styles.socialtem} />
-                        <FaTiktok className={styles.socialtem} />
-                        <FaInstagram className={styles.socialtem} />
+                       {/* здесь приветствие для user */}
                     </div>
                     <div className={styles.centralField}>
                         <div className={styles.centralFieldItems}>
                             <div><img src={logoLight} className={styles.logo} alt="logo" /></div>
-                            <div className={styles.navBarIcon}><AiOutlineMenu sx={{ width: '100px' }} /></div>
+                            <div className={styles.navBarIcon}><AiOutlineMenu
+                                onClick={() => {
+                                    setOpenNavBar(true)
+                                }}
+                                sx={{ width: '100px' }} /></div>
                         </div>
                         <div className={styles.fullScreenLinks}>
                             <NavBar />
                         </div>
-                            <BurgerMenu />
+                        { openNavBar && <BurgerMenu setOpenNavBar={setOpenNavBar}/> }
                     </div>
                     <div className={styles.registrationField}>
                         <Button onClick={() => {
