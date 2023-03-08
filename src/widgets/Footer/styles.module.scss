@@ -7,9 +7,6 @@
     color: #fffaf0;
     margin: -1rem;
     padding-bottom: 2rem;
-    
-    
-      
 }
 
 .contactsItem{
@@ -18,8 +15,8 @@
     display: flex;
     justify-content: space-between;
     color: #fffaf0;
- 
 }
+
 .title{
     font-size: 3rem;
     margin: 0;
@@ -32,29 +29,21 @@
 
 .contactItem{
     font-size: 2rem;
-    // display: flex;
     flex-direction: column;
     display: block;
     border-right: 2px solid #fffaf0;
-
-    
-}
-.contactItemRight{
-    font-size: 2rem;
-    flex-direction: column;
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
 }
 
 .contact{
     margin-bottom: 3rem;
     font-size: 0.7em;
-    padding-left: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.contactRight{
-    margin-bottom: 3rem;
-    font-size: 0.7em;
+
+.adress,.phone{
+    padding-bottom: 30px;
 }
 
 .socialtem{
@@ -71,24 +60,6 @@
 opacity: 0.5;
 }
 
-// .lineLeft{
-//     border-left: 0.15rem solid #fffaf0;
-//     height: 290px;
-//     position: absolute;
-//     left: 55%;
-//     margin-left: -389px;
-//     top: 0;
-// }
-
-// .lineRight{
-//     border-right: 0.15rem solid #fffaf0;
-//     height: 290px;
-//     position: absolute;
-//     left: 45%;
-//     margin-left: 300px;
-//     top: 0;
-// }
-
 .logo{
     width: 400px;
 }
@@ -100,10 +71,3 @@ opacity: 0.5;
 
 }
 
-.adress{
-    padding-bottom: 20px;
-}
-
-.phone{
-    padding-left: 40px;
-}

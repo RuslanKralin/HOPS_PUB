@@ -28,3 +28,57 @@
     font-weight: 700;
 }
 
+//Адаптация
+
+@media (max-width: 1440px){
+    .menuBtnRight{
+        width: 40rem; 
+        height: 40rem;
+    }
+    .menuBtnLeft{
+        width: 40rem; 
+        height: 40rem;
+    }
+  }
+
+  @media (max-width: 1280px){
+    .menuBtnRight{
+        width: 35rem; 
+        height: 35rem;
+    }
+    .menuBtnLeft{
+        width: 35rem; 
+        height: 35rem;
+    }
+}
+
+@media (max-width: 1152px){
+    .menuBtnRight{
+        width: 32rem; 
+        height: 32rem;
+    }
+    .menuBtnLeft{
+        width: 32rem; 
+        height: 32rem;
+    }
+}
+
+@media (max-width: 1024px){
+    .menuBtnRight{
+        width: 56rem; 
+        height: 56rem;
+    }
+    .menuBtnLeft{
+        width: 56rem; 
+        height: 56rem;
+    }
+    .menuWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+

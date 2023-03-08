@@ -60,7 +60,6 @@
     width: 45rem;
     height: 35rem;
     cursor: pointer;
-    background-color: #897e47;
 }
 
 .left{
@@ -85,4 +84,87 @@
     padding-top: 30px;
     text-align: right;
 }
+
+//Адаптация
+
+@media (max-width: 1440px){
+    .left {
+     width: 40rem;
+    }
+  
+    .right {
+      width: 40rem;
+    }
+    .btnField{
+        gap: 15rem;
+    }
+  }
+
+  @media (max-width: 1280px){
+    .btnField{
+        gap: 10rem;
+    }
+    .left {
+        width: 35rem;
+       }
+     .right {
+      width: 35rem;
+       }
+       .infoWrapper{
+        padding-bottom: 0px;
+     }   
+}
+
+@media (max-width: 1152px){
+    .btnField{
+        gap: 7rem;
+    }
+    .left {
+        width: 32rem;
+       }
+     .right {
+      width: 32rem;
+       }
+       .infoWrapper{
+        padding-bottom: 0px;
+     }
+}
+
+@media (max-width: 1024px){
+    .btnField{
+        gap: 4rem;
+    }
+    .left {
+        width: 30rem;
+       }
+     .right {
+      width: 30rem;
+       }
+       .infoWrapper{
+        padding-bottom: 0px;
+     }
+     
+.btnField{
+    display: flex;
+    flex-direction: column;
+}
+.restourantField{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.left {
+    width: 56rem;
+    margin-bottom: 14rem;
+   }
+ .right {
+  width: 56rem;
+  margin-bottom: 14rem;
+   }
+   .infoWrapper{
+    padding-bottom: 0px;
+ }
+}
+
+
 

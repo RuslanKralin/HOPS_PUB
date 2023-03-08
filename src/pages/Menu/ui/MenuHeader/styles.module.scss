@@ -72,3 +72,20 @@
 .active{
     background-color:coral; 
 }
+
+//Адаптация
+
+@media (max-width: 1440px){
+    .headerInfo{
+        top: 19%;
+    }
+  }
+
+  @media (max-width: 1280px){
+    .limitedConteiner{
+        padding-left: 30px;
+    }
+    .headerSection{
+        padding-right: 30px;
+    } 
+  }  

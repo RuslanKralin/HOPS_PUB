@@ -74,7 +74,7 @@ function Info() {
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
-                    <div><h5 className={styles.title}>Время работы:</h5></div>
+                    <div className={styles.title}><h5 className={styles.title}>Время работы:</h5></div>
                     <div><h5 className={styles.time}>11.00 - 23.00 Вс-Чт</h5></div>
                     <div><h5 className={styles.time}>11.00 - 02.00 Пт-Сб</h5></div>
 

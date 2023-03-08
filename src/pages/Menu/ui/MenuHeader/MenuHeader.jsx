@@ -6,7 +6,7 @@ import { Basket } from 'shared/ui';
 
 // import { DataProduct } from 'app/DataProduct';
 
-function MenuHeader({ openBasket, setOpenBasket, productItem, setProductItems, onAdd, onRemove, countCartItems }) {
+function MenuHeader({ openBasket, setOpenBasket, productItem, onAdd, onRemove }) {
 
     return (
         <div id='food' className={styles.wrapper}>

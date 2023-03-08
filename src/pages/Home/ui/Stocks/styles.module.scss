@@ -27,3 +27,24 @@
     transform: translate(0,-10px);
     transition: all 0.2s ease 0s;
 }
+
+@media (max-width: 1280px){
+    .stockItem{
+        max-width: 150px;
+        max-height: 320px;
+    }
+}
+
+@media (max-width: 1152px){
+    .stockItem{
+        max-width: 130px;
+        max-height: 280px;
+    }
+}
+
+@media (max-width: 1024px){
+    .stockItem{
+        max-width: 120px;
+        max-height: 280px;
+    }
+}

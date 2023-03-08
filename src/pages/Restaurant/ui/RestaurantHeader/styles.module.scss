@@ -19,7 +19,15 @@
     position: absolute;
     font-size: 45px;
     font-weight: 700;
-    color: #fffaf0;;
+    color: #fffaf0;
     top: 20%;
     left: 35%;
 }
+
+//Адаптация
+
+@media (max-width: 1440px){
+    .title{
+        top: 12%;
+    }
+  }
