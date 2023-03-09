@@ -11,9 +11,8 @@
     padding-top: 40px;
     display: flex;
     justify-content: space-around;
-    
-
 }
+
 .aboutItem{
     border: 1px solid #002420;
     padding: 5px 10px;
@@ -106,4 +105,30 @@ background-position: center;
      margin-bottom: 115px;
     }
   }  
+
+  @media (max-width: 1024px){
+    .about{
+        padding-top: 40px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .aboutItem{
+        min-width: 495px;
+        margin-bottom: 10px;
+       
+    }
+    .aboutRestaurants{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftBtn, .rightBtn {
+        width: 950px;
+        height: 500px;
+    }
+    .logo{
+       display: none;
+       }
+
+  }   
 

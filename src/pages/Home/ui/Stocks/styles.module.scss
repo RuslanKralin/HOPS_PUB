@@ -44,7 +44,12 @@
 
 @media (max-width: 1024px){
     .stockItem{
-        max-width: 120px;
-        max-height: 280px;
+        min-width: 376px;
+        min-height: 565px;
+    }
+    .stocks{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 40px;
     }
 }
