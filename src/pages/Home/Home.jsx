@@ -12,7 +12,7 @@ function Home() {
         <div className={styles.content}>
         <HomeHeader />
         <Info/>
-        <MenuViews/>
+        <MenuViews/>    
         <Stocks />
         </div>
        

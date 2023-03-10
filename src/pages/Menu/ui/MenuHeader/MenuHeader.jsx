@@ -20,7 +20,7 @@ function MenuHeader({ openBasket, setOpenBasket, productItem, onAdd, onRemove })
                     <SlBasket style={{ fontSize: 40, color: 'white' }} />
                 </div>
                 {/* <div>{countCartItems && <div>{countCartItems}</div>}</div> counter сдулаю позже*/}
-                {openBasket && <Basket onAdd={onAdd} onRemove={onRemove} productItem={productItem} />}
+                {openBasket && <Basket onAdd={onAdd} onRemove={onRemove} productItem={productItem} setOpenBasket={setOpenBasket}/>}
 
             </div>
             <div className={styles.headerImg}>

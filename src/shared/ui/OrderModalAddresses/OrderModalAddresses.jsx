@@ -17,16 +17,12 @@ function OrderModalAddresses({ setOpenOrderModal }) {
             <h4 className={styles.info}>По какому адресу хотите отдохнуть?</h4>
             <AiOutlineCloseCircle className={styles.closeIcon} onClick={() => setOpenOrderModal(false)} />
             <div className={styles.btnWrapper}>
-                <Button onClick={() => {
-                    setOpenBooking(true)
-                }}
+                <Button onClick={()=> setOpenBooking(true)}
                     sx={{ minWidth: '350px', minHeight: '80px', margin: '0 20px' }} variant="contained" color="success">
                     Колесникова, 38
                 </Button>
                 {openBooking && <Booking openBooking={openBooking} setOpenBooking={setOpenBooking} setOpenOrderModal={setOpenOrderModal}/>}
-                <Button onClick={() => {
-                    setOpenBooking(true)
-                }}
+                <Button onClick={()=> setOpenBooking(true)}
                  sx={{ minWidth: '350px', minHeight: '80px', margin: '0 20px' }} variant="contained" color="success">
                     Кульман, 4
                 </Button> </div>

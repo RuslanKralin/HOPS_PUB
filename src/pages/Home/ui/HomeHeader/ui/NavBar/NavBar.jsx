@@ -40,7 +40,7 @@ function NavBar() {
                     <a href="#stock" className={styles.menuLink}>Акции</a>
                 </li>
                 <li>
-                    <a href="#contacts" className={styles.menuLink}>Контакты</a>
+                    <a href={ROUTES.CONTACTS} className={styles.menuLink}>Контакты</a>
                 </li>
 
             </ul>

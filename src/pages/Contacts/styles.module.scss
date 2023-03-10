@@ -1,0 +1,40 @@
+.wrapper{
+    margin: 0;
+    padding: 0;
+  }
+
+.header{
+    width: 100vw;
+}  
+
+.img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    position: relative;
+}
+
+.title{
+  position: absolute;
+  top: 18%;
+  left: 38%;
+  object-fit: cover;
+  color: #fffaf0;
+  z-index: 2;
+}
+
+.sectionWrapper{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fffaf0;
+}
+ h3{
+    text-align: center;
+    padding: 20px 0;
+ }
+.map{
+    // min-width: 700px;
+    // min-height: 500px;
+    // background-color: aquamarine;
+    // gap: 20px;
+}

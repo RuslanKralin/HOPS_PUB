@@ -2,13 +2,13 @@ import { Button } from '@mui/material';
 import { useState } from 'react';
 import styles from './styles.module.scss'
 
-function Basket(props) {
-  const { productItem, onAdd, onRemove } = props
+function Basket({ productItem, onAdd, onRemove, setOpenBasket }) {
+  const [comment, setComment] = useState(false)
+  
   const itemsPrice = productItem.reduce((acc, product) => {
     return acc + product.price * product.qty
   }, 0)
  
-  const [comment, setComment] = useState(false)
   return (
 
     <div className={styles.wrapper}>
@@ -36,7 +36,7 @@ function Basket(props) {
             <div className={styles.resultTitle}>Итого:</div>
             <div className={styles.resultValue}>{itemsPrice} руб</div>
             <Button variant="contained" color="success"
-            // onClick={setOpenBasket(false)}
+            onClick={()=>setOpenBasket(false)}
             >
               Готово
             </Button>

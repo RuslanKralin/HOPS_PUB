@@ -1,11 +1,14 @@
-import { useState } from "react"
-import { FoodMenu } from "./ui/FoodMenu"
-import { MenuHeader } from "./ui/MenuHeader"
+import { useEffect, useState } from "react"
+import { FoodMenu, MenuHeader } from './ui'
 
 
 function Menu() {
-    let [openBasket, setOpenBasket] = useState(false)
-    const [productItem, setProductItems] = useState([])
+    const [openBasket, setOpenBasket] = useState(false)
+    const [productItem, setProductItems] = useState(JSON.parse(localStorage.getItem('Basket')) || [])
+
+    useEffect(()=>{
+        localStorage.setItem('Basket', JSON.stringify(productItem))
+    },[productItem])
 
     const onAdd = (product) => {
         console.log('sucsses')

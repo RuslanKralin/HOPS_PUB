@@ -48,7 +48,8 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal }) {
                 validationSchema={validationSchema}
                 onSubmit={(values) => {
                     console.log(values)
-
+                    setOpenBooking(false)
+                    setOpenOrderModal(false)
                 }}
             >
                 {({
@@ -68,7 +69,7 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal }) {
                         <div className={styles.check}>*Администратор свяжется с Вами для уточнения деталей</div>
                         <div className={styles.btn}>
                             <Button 
-                            onClick={handleSubmit}// нужно повесить функцию закрытия
+                            type='submit'
                             variant="contained"
                             color="success"
                             sx={{ width: '250px' }}>

@@ -1,8 +1,8 @@
 import styles from './styles.module.scss'
 import primeHomePhoto from 'assets/backgraund/primeHomePhoto.jpg'
 import logoLight from 'assets/backgraund/logoLight.png'
-import { FiFacebook, FiTwitter } from 'react-icons/fi'
-import { FaTiktok, FaInstagram } from 'react-icons/fa'
+// import { FiFacebook, FiTwitter } from 'react-icons/fi'
+// import { FaTiktok, FaInstagram } from 'react-icons/fa'
 import { CiBeerMugFull } from 'react-icons/ci'
 import { BiMusic } from 'react-icons/bi'
 import { GiSlicedBread } from 'react-icons/gi'
@@ -23,7 +23,7 @@ function HomeHeader() {
     const [openSignIn, setOpenSignIn] = useState(false);
     const [openOrderModal, setOpenOrderModal] = useState(false);
     const [openNavBar, setOpenNavBar] = useState(false);
-
+    const User = JSON.parse(localStorage.getItem('User'))
 
     return (
         <div className={styles.wrapper}>
@@ -31,7 +31,7 @@ function HomeHeader() {
             <div className={styles.fullScreen}>
                 <div className={styles.fullScreenBody}>
                     <div className={styles.socialField}>
-                       {/* здесь приветствие для user */}
+                       {User && `Привет ${User.name} ${User.secondName}`}
                     </div>
                     <div className={styles.centralField}>
                         <div className={styles.centralFieldItems}>
@@ -80,19 +80,19 @@ function HomeHeader() {
 
                 <div className={styles.advertisingField}>
                     <div className={styles.advertisingIcon}>
-                        <div><CiBeerMugFull className={styles.icon} /></div>
+                        <div><CiBeerMugFull /></div>
                         <div className={styles.describe}>Собственная пивоварня</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><BiMusic className={styles.icon} /></div>
+                        <div><BiMusic  /></div>
                         <div className={styles.describe}>Живой звук</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><GiSlicedBread className={styles.icon} /></div>
+                        <div><GiSlicedBread  /></div>
                         <div className={styles.describe}>Собственная кондитерская и хлеб</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><MdSportsBasketball className={styles.icon} /></div>
+                        <div><MdSportsBasketball   /></div>
                         <div className={styles.describe}>Спортивные трансляции</div>
                     </div>
                 </div>

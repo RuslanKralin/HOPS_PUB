@@ -1,4 +1,4 @@
-import { Home, Menu, Restaurant, NotFound, Brewery } from 'pages';
+import { Home, Menu, Restaurant, NotFound, Brewery,Contacts  } from 'pages';
 import { Routes, Route } from 'react-router-dom';
 import { ROUTES } from 'shared/consts/routes';
 
@@ -10,6 +10,7 @@ function Router() {
             <Route path={ROUTES.RESTAURANT} element={<Restaurant />} />
             <Route path={ROUTES.BREWERY} element={<Brewery />} />
             <Route path={ROUTES.NOTFOUND} element={<NotFound />} />
+            <Route path={ROUTES.CONTACTS} element={<Contacts />} />
        </Routes>
     )
 }

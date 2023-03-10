@@ -4,4 +4,5 @@ export const ROUTES = {
     RESTAURANT: '/restaurant',
     BREWERY: '/brewery',
     NOTFOUND: '*',
+    CONTACTS: '/contacts',
 }

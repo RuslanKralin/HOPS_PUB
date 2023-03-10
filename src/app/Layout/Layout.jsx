@@ -2,9 +2,9 @@ import { Footer } from "widgets/Footer"
 
 function Layout() {
   
-    return <div>
+    return( <div>
         <Footer/>
-    </div>
+    </div>)
 }
 
 export default Layout

@@ -5,24 +5,25 @@ import { AiOutlineCloseCircle } from 'react-icons/ai'
 import * as yup from 'yup'
 import { Formik } from 'formik';
 import { FormInput } from 'shared/ui';
+import { signUpValidation } from 'shared/helpers';
 
 
 
 
 function SignUpModal({ openSignUp, setOpenSignUp }) {
-    const validationSchema = yup.object().shape({
-        name: yup.string()
-            .min(3, 'Слишком короткое!')
-            .max(12, 'Слишком длинное!')
-            .required('Обязательно'),
-        secondName: yup.string().typeError('Только буквы').required('Обязательно'),
-        email: yup.string().email('Введите верный email').required('Обязательно'),
-        password: yup.string()
-            .min(6, 'Too short!')
-            .max(12, 'Too long!')
-            .required('Обязательно'),
-        confirm: yup.string().oneOf([yup.ref('password')], 'Пароли не совпадают').required('Обязательно')
-    })
+    // const validationSchema = yup.object().shape({
+    //     name: yup.string()
+    //         .min(3, 'Слишком короткое!')
+    //         .max(12, 'Слишком длинное!')
+    //         .required('Обязательно'),
+    //     secondName: yup.string().typeError('Только буквы').required('Обязательно'),
+    //     email: yup.string().email('Введите верный email').required('Обязательно'),
+    //     password: yup.string()
+    //         .min(6, 'Too short!')
+    //         .max(12, 'Too long!')
+    //         .required('Обязательно'),
+    //     confirm: yup.string().oneOf([yup.ref('password')], 'Пароли не совпадают').required('Обязательно')
+    // })
 
     return (
 
@@ -43,8 +44,9 @@ function SignUpModal({ openSignUp, setOpenSignUp }) {
                     confirm: '',
 
                 }}
-                validationSchema={validationSchema}
+                validationSchema={signUpValidation}
                 onSubmit={(values) => {
+                    localStorage.setItem('User', JSON.stringify(values))
                     console.log(values)
 
                 }}
