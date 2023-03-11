@@ -9,12 +9,13 @@ function BurgerMenu({ setOpenNavBar }) {
     return (
         <nav className={styles.menu}>
             <ul className={styles.menuList}>
-            <img src={logoLight} className={styles.logo} alt="logo" />
-            <AiOutlineCloseCircle 
-            onClick={()=>{
-                setOpenNavBar(false)
-            }}
-            className={styles.closeIcon} />
+                <img src={logoLight} className={styles.logo} alt="logo" />
+                <AiOutlineCloseCircle
+                    onClick={() => {
+                        setOpenNavBar(false)
+                    }}
+                    className={styles.closeIcon} />
+                   
                 <li>
                     <a href={ROUTES.RESTAURANT} className={styles.menuLink}>Рестораны</a>
                 </li>
@@ -23,7 +24,7 @@ function BurgerMenu({ setOpenNavBar }) {
                 </li>
                 <li>
                     <a href="#" className={styles.menuLink}>Доставка</a>
-                    <ul className={styles.subMenuList}>
+                    {/* <ul className={styles.subMenuList}>
                         <li ><a href="#" className={styles.subMenuLink}>Яндекс</a>
                             <ul className={styles.subSubMenuList}>
                                 <li><a href="https://eda.yandex.by/r/clever_rock_pub?placeSlug=clever_rock_pub" target="_blank" className={styles.subSubMenuLink}>Колесникова, 38</a></li>
@@ -35,8 +36,8 @@ function BurgerMenu({ setOpenNavBar }) {
                                 <li><a href="https://delivio.by/restaurant/clever" target="_blank" className={styles.subSubMenuLink}>Колесникова, 38</a></li>
                                 <li><a href="https://delivio.by/restaurant/hopspubkulman" target="_blank" className={styles.subSubMenuLink}>Кульман, 4</a></li>
                             </ul>
-                            </li>
-                    </ul>
+                        </li>
+                    </ul> */}
                 </li>
                 <li>
                     <a href={ROUTES.BREWERY} className={styles.menuLink}>Пивоварня</a>
@@ -48,7 +49,7 @@ function BurgerMenu({ setOpenNavBar }) {
                     <a href="#stock" className={styles.menuLink}>Акции</a>
                 </li>
                 <li>
-                    <a href="#contacts" className={styles.menuLink}>Контакты</a>
+                    <a href={ROUTES.CONTACTS} className={styles.menuLink}>Контакты</a>
                 </li>
 
             </ul>

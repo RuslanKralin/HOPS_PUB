@@ -13,7 +13,7 @@ import styles from './styles.module.scss'
 function Stocks() {
     return (
         <div className={styles.stocksWrapper}>
-           <h1 className={styles.title}>Акции</h1>
+           <h1 className={styles.title} id='stock'>Акции</h1>
            <div  className={styles.stocks}>
                <div><img className={styles.stockItem} src={stock1} alt='stock' /></div>
                <div><img className={styles.stockItem} src={stock2} alt='stock'/></div>

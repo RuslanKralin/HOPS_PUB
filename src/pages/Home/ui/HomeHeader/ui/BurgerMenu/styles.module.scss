@@ -7,7 +7,6 @@
 
 .menu a{
     text-decoration: none;
-    // padding: 10px;
 }
 
 .menu li{
@@ -23,15 +22,17 @@
 }
 
 .menuLink{
+    display: inline-block;
     border-bottom: 1px solid transparent;
     transition: .2s;
     letter-spacing: .01em;
-    margin: 30px 0px;
-   
-}
+    color: #fffaf0;
+    margin-bottom: 60px;
+}  
 
 .menuLink:hover{
     border-bottom: 1px solid #fffaf0;
+    
 }
    
 .menuList{
@@ -45,7 +46,7 @@
     opacity: .9;
     padding: 5%;
     min-width: 1024px;
-    height: 100%;
+    max-height: au;
     z-index: 20;
 }
 
@@ -63,15 +64,13 @@
     font-size: 80px;
     cursor: pointer;
     color:#fffaf0;
+    gap: 40px;
 }
 
 .menuList>li:hover .subMenuList{
 display: block;
 }
 
-.menuLink{
-    color: #fffaf0;
-}
 
 .menuLink:hover{
     color: #fffaf0;

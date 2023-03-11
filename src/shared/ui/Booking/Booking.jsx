@@ -62,7 +62,7 @@ function Booking({ openBooking, setOpenBooking, setOpenOrderModal }) {
                     <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '30px', margin: '20px 0' }}>
                         <FormInput name='name' label='Имя' />
                         <FormInput name='secondName' label='Фамилия' />
-                        <FormInput name='phone' label='Телефон' />
+                        <FormInput name='phone' label='Телефон' type='number' />
                         <NativePickers />
                         <FormInput name='number' label='Количество гостей' />
 

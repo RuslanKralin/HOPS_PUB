@@ -1,9 +1,10 @@
 import { TextField } from "@mui/material";
+import { type } from "@testing-library/user-event/dist/type";
 import { useFormikContext } from "formik";
 
 
 
-function FormInput({name, label,onClick}) {
+function FormInput({name, label, onClick}) {
     const { setFieldValue, handleBlur, values, errors, touched } = useFormikContext()// должен находится именно внутри. это условие этого хука
     return (
         <>

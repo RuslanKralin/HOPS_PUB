@@ -4,8 +4,9 @@ import ProductItem from './ui/ProductItem/ProductItem'
 // import { useState } from 'react';
 import { NavBarBtn } from './ui/NavBarBtn';
 
-function FoodMenu({ onAdd, handleClick, onClick, activeBarLink  }) {
-    const { products } = DataProduct;
+function FoodMenu({ onAdd, handleClick }) {
+    const { salad } = DataProduct;
+    const { main } = DataProduct;
 
     return (
         <>
@@ -30,10 +31,15 @@ function FoodMenu({ onAdd, handleClick, onClick, activeBarLink  }) {
             <div className={`${styles.wrapper} ${styles.limitedConteiner}`}>
                 <h1 className={styles.foodTitle}>Салаты и закуски</h1>
                 <div className={styles.foodConteiner}>
-                    {products.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
+                    {salad.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
 
                     )}
+                </div>
+                <h1 className={styles.foodTitle}>Горячее</h1>
+                <div className={styles.foodConteiner}>
+                    {main.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
 
+                    )}
                 </div>
             </div>
         </>)

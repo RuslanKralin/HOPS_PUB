@@ -10,21 +10,16 @@ import { signUpValidation } from 'shared/helpers';
 
 
 
-function SignUpModal({ openSignUp, setOpenSignUp }) {
-    // const validationSchema = yup.object().shape({
-    //     name: yup.string()
-    //         .min(3, 'Слишком короткое!')
-    //         .max(12, 'Слишком длинное!')
-    //         .required('Обязательно'),
-    //     secondName: yup.string().typeError('Только буквы').required('Обязательно'),
-    //     email: yup.string().email('Введите верный email').required('Обязательно'),
-    //     password: yup.string()
-    //         .min(6, 'Too short!')
-    //         .max(12, 'Too long!')
-    //         .required('Обязательно'),
-    //     confirm: yup.string().oneOf([yup.ref('password')], 'Пароли не совпадают').required('Обязательно')
-    // })
+function SignUpModal({ openSignUp, setOpenSignUp, handleSubmit }) {
 
+function CloseWindow(){
+   if(handleSubmit){
+    setOpenSignUp(false)}
+    else{
+        setOpenSignUp(true)
+    }
+    
+}
     return (
 
 
@@ -56,8 +51,6 @@ function SignUpModal({ openSignUp, setOpenSignUp }) {
                     values,// хранит все текущие значения формика
                     handleSubmit,
                     setFieldValue,
-
-
                     /* and other goodies */
                 }) => (
                     <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', gap: '10px', padding: '30px' }}>
@@ -73,7 +66,7 @@ function SignUpModal({ openSignUp, setOpenSignUp }) {
 
                         </FormGroup></div>
 
-                        <div className={styles.btn}><Button onClick={handleSubmit} variant="contained" color="success" sx={{ width: '250px' }}>
+                        <div className={styles.btn}><Button onClick={() => {handleSubmit() ;CloseWindow()}}  type="submit" variant="contained" color="success" sx={{ width: '250px' }}>
                             Отправить
                         </Button></div>
 
