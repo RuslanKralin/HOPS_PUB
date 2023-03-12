@@ -139,6 +139,14 @@ a:hover{
         padding-bottom: 20px;
     }
 }
+
+@media (max-width: 800px){
+    .limitedConteiner{
+        padding-left: 0px;
+        padding-right: 18px;
+    }
+}
+
     
 
 

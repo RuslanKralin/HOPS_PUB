@@ -40,6 +40,23 @@
 //800
 @media (max-width: 800px){
  .wrapper{
-    max-width: 775px;//Не работает
+    max-width: 775px;
  }
+   }
+
+   //768
+@media (max-width: 768px){
+    .wrapper{
+        max-width: 675px;
+        top: 55%;
+        height: 350px;
+     }
+     .btnWrapper{
+        flex-direction: column;
+        gap: 20px;
+     }
+     .info{
+   padding-top: 30px;
+   padding-bottom: 20px;
+    } 
    }

@@ -165,6 +165,25 @@
 }
 
 //Адаптация
+@media (min-width: 2560px){
+    .fullScreenBody{
+        padding-bottom: 14.4vw;
+        padding-left: 0vw;
+        padding-right: 5vw;
+    }
+    .title{
+        padding-left: 140px;
+    }
+    .btn{
+      padding-left: 120px;
+    }
+    
+    .advertisingField{
+        top: 95%;
+        padding-right: 50px;
+    }
+}
+
 //1440
 @media (max-width: 1440px){
     .advertisingField{

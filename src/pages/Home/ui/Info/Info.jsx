@@ -11,6 +11,7 @@ import img6 from 'assets/slader2/img6.jpg'
 import img7 from 'assets/slader2/img7.jpg'
 import img9 from 'assets/slader2/img9.jpg'
 import { PrimeButton } from 'shared/ui';
+// import { ROUTES } from 'shared/consts';
 
 
 function Info() {
@@ -25,7 +26,7 @@ function Info() {
             </div>
             <div className={styles.line} ></div>
             <div className={styles.btnField}>
-                <PrimeButton title='кнопка'/>
+                <PrimeButton title='мы на карте'/>
                 <PrimeButton title='кейтеринг'/>
                 <PrimeButton title='отзыв'/>
             </div>

@@ -79,6 +79,7 @@ background-position: center;
 
 //Адаптация
 
+
 @media (max-width: 1440px){
     .leftBtn, .rightBtn {
         width: 500px;
@@ -130,5 +131,28 @@ background-position: center;
        display: none;
        }
 
-  }   
+  }
+
+  // 800
+@media (max-width: 800px){
+    .leftBtn, .rightBtn {
+        width: 756px;
+        height: 500px;
+    }
+    .aboutItem{
+     text-align: center;
+    }
+  }
+
+
+  @media (max-width: 768px){
+    .leftBtn, .rightBtn {
+        width: 720px;
+        height: 480px;
+    }
+    .aboutItem{
+     text-align: center;
+    }
+  
+   }  
 

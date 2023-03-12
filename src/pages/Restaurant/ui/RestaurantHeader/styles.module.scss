@@ -20,11 +20,16 @@
     font-size: 45px;
     font-weight: 700;
     color: #fffaf0;
-    top: 20%;
+    top: 18%;
     left: 35%;
 }
 
 //Адаптация
+@media (min-width: 2560px){
+  .title{
+      top: 5%;
+  }
+}
 
 @media (max-width: 1440px){
     .title{
@@ -37,4 +42,11 @@
        top: 6%;
        left: 28%;
     }
-  }  
+  }
+  @media (max-width: 768px){
+    .title{
+        left: 21%;
+     }
+  }
+
+     
