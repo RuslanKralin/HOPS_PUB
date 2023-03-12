@@ -60,3 +60,27 @@
     // width: 90%;
  }
 
+ //Адаптация
+
+ @media (max-width: 1152px){
+   .infoSection{
+   
+     padding-top: 30px;
+     padding-bottom: 70px;
+    }
+   .map{
+    min-width: 500px;
+    min-height: 330px;
+   } 
+   .contactTitle{
+    padding-bottom: 15px;
+}
+
+.legalInfo{
+    padding: 15px 0;
+ }
+ .title{
+    top: 6%;
+  }
+} 
+

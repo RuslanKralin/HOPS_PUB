@@ -12,7 +12,7 @@ function Contacts() {
             <div className={styles.sectionWrapper}>
                 <div className={styles.infoSection}>
 
-                    <div className={styles.map}>
+                    <div>
                         <iframe className={styles.map} title='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44697.192679571475!2d27.460809498465288!3d53.92984437657101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc4db577b495f%3A0xa61d9754aadcc69f!2z0YPQu9C40YbQsCDQmtC-0LvQtdGB0L3QuNC60L7QstCwIDM4LCDQnNC40L3RgdC6!5e0!3m2!1sru!2sby!4v1678465072000!5m2!1sru!2sby"></iframe>
                     </div>
                     <div className={styles.contactInfo}>
@@ -50,7 +50,7 @@ function Contacts() {
                             ПТ-СБ: 11.00 - 01.00
                         </div>
                     </div>
-                    <div className={styles.map}>
+                    <div >
                     <iframe className={styles.map} title='map'  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2349.6849686817286!2d27.5846418!3d53.919573799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbcfa11f4664bd%3A0x68f2e129d1bed462!2z0YPQuy4g0JrRg9C70YzQvNCw0L0gNCwg0JzQuNC90YHQuiAyMjAwODk!5e0!3m2!1sru!2sby!4v1678533684541!5m2!1sru!2sby" ></iframe>
                     </div>
                 </div>

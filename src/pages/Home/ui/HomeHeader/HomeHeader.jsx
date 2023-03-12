@@ -3,7 +3,7 @@ import primeHomePhoto from 'assets/backgraund/primeHomePhoto.jpg'
 import logoLight from 'assets/backgraund/logoLight.png'
 // import { FiFacebook, FiTwitter } from 'react-icons/fi'
 // import { FaTiktok, FaInstagram } from 'react-icons/fa'
-import { CiBeerMugFull } from 'react-icons/ci'
+import { TiBeer } from 'react-icons/ti'
 import { BiMusic } from 'react-icons/bi'
 import { GiSlicedBread } from 'react-icons/gi'
 import { AiOutlineMenu } from 'react-icons/ai'
@@ -80,19 +80,36 @@ function HomeHeader() {
 
                 <div className={styles.advertisingField}>
                     <div className={styles.advertisingIcon}>
-                        <div><CiBeerMugFull /></div>
+                        <div><TiBeer                         style={{
+                            width: '4em', height: '4em',border: '2px solid #002420',
+                            borderRadius: '50%', marginLeft: 'auto', marginRight: 'auto',
+                            backgroundColor: '#002420',  marginRight: '1rem'
+                            }}/></div>
                         <div className={styles.describe}>Собственная пивоварня</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><BiMusic  /></div>
+                        <div><BiMusic                         style={{
+                            width: '4em', height: '4em',border: '2px solid #002420',
+                            borderRadius: '50%', marginLeft: 'auto', marginRight: 'auto',
+                            backgroundColor: '#002420',  marginRight: '1rem'
+                            }} /></div>
                         <div className={styles.describe}>Живой звук</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><GiSlicedBread  /></div>
+                        <div><GiSlicedBread 
+                        style={{
+                            width: '4em', height: '4em',border: '2px solid #002420',
+                            borderRadius: '50%', marginLeft: 'auto', marginRight: 'auto',
+                            backgroundColor: '#002420',  marginRight: '1rem'
+                            }} /></div>
                         <div className={styles.describe}>Собственная кондитерская и хлеб</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><MdSportsBasketball   /></div>
+                        <div><MdSportsBasketball                         style={{
+                            width: '4em', height: '4em',border: '2px solid #002420',
+                            borderRadius: '50%', marginLeft: 'auto', marginRight: 'auto',
+                            backgroundColor: '#002420', marginRight: '1rem'
+                            }}  /></div>
                         <div className={styles.describe}>Спортивные трансляции</div>
                     </div>
                 </div>

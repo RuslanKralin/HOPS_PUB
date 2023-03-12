@@ -16,15 +16,17 @@ function FoodMenu({ onAdd, handleClick }) {
         <>
             <div className={`${styles.headerNavBar} ${styles.limitedConteiner}`}>
                 <div className={styles.food}>
-                    <div className={styles.foodLink}>Салаты и закуски</div>
-                    <div className={styles.foodLink}>Горячее</div>
-                    <div className={styles.foodLink}>Стейки</div>
-                    <div className={styles.foodLink}>Супы и хлеб</div>
+                    <a className={styles.foodLink} href='#salad'>Салаты и закуски</a>
+                    <a className={styles.foodLink} href='#main'>Горячее</a>
+                    <a className={styles.foodLink} href='#burgers'>Бургеры</a>
+                    <a className={styles.foodLink} href='#steak'>Стейки</a>
+                    <a className={styles.foodLink} href='#fryingPan'>Сковородки</a>
+                    <a className={styles.foodLink} href='#soap'>Супы и хлеб</a>
                 </div>
                 <div className={styles.bar}>
                     <NavBarBtn title='Пиво' onClick={() => handleClick}
                         className={styles.active}
-                        // className={activeBarLink ? `${styles.active}` : `${styles.barLink}`}
+                    // className={activeBarLink ? `${styles.active}` : `${styles.barLink}`}
                     ></NavBarBtn>
                     <NavBarBtn title='Вино' />
                     <NavBarBtn title='Крепкое' />
@@ -33,44 +35,38 @@ function FoodMenu({ onAdd, handleClick }) {
             </div>
 
             <div className={`${styles.wrapper} ${styles.limitedConteiner}`}>
-                <h1 className={styles.foodTitle}>Салаты и закуски</h1>
+                <h1 className={styles.foodTitle} id='salad'>Салаты и закуски</h1>
                 <div className={styles.foodConteiner}>
                     {salad.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
-
                     )}
                 </div>
-                <h1 className={styles.foodTitle}>Горячее</h1>
+                <h1 className={styles.foodTitle} id='main'>Горячее</h1>
                 <div className={styles.foodConteiner}>
                     {main.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
-
                     )}
                 </div>
 
-                <h1 className={styles.foodTitle}>Бургеры</h1>
+                <h1 className={styles.foodTitle} id='burgers'>Бургеры</h1>
                 <div className={styles.foodConteiner}>
                     {burgers.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
-
                     )}
                 </div>
 
-                <h1 className={styles.foodTitle}>Стейки</h1>
+                <h1 className={styles.foodTitle} id="steak">Стейки</h1>
                 <div className={styles.foodConteiner}>
                     {steak.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
-
                     )}
                 </div>
 
-                <h1 className={styles.foodTitle}>Сковородки</h1>
+                <h1 className={styles.foodTitle} id='fryingPan'>Сковородки</h1>
                 <div className={styles.foodConteiner}>
                     {fryingPan.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
-
                     )}
                 </div>
 
-                <h1 className={styles.foodTitle}>Супы</h1>
+                <h1 className={styles.foodTitle} id='soap'>Супы</h1>
                 <div className={styles.foodConteiner}>
                     {soap.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
-
                     )}
                 </div>
 

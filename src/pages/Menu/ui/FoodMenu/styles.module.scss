@@ -37,9 +37,19 @@
     font-weight: 800;
     letter-spacing: 0.001em;
 }
+a{
+    text-decoration: none; 
+}
+a:hover{
+    color: #002420;
+    border-bottom: 3px solid #2b4fb9;
+
+}
 
 .foodLink{
     border-bottom: 3px solid #fffaf0;
+    color: #002420;
+    text-decoration: none;
     margin: 0px;
     cursor: pointer;
     transition: 0.5s;
@@ -47,7 +57,8 @@
 }
 
 .foodLink:hover{
-    border-bottom: 3px solid #2b4fb9;
+    color: #002420;
+    // border-bottom: 1px solid #2b4fb9;
     margin: 0px;
     cursor: pointer;
 }
