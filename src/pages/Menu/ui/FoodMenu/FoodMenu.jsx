@@ -7,6 +7,10 @@ import { NavBarBtn } from './ui/NavBarBtn';
 function FoodMenu({ onAdd, handleClick }) {
     const { salad } = DataProduct;
     const { main } = DataProduct;
+    const { burgers } = DataProduct;
+    const { steak } = DataProduct;
+    const { fryingPan } = DataProduct;
+    const { soap } = DataProduct;
 
     return (
         <>
@@ -41,6 +45,35 @@ function FoodMenu({ onAdd, handleClick }) {
 
                     )}
                 </div>
+
+                <h1 className={styles.foodTitle}>Бургеры</h1>
+                <div className={styles.foodConteiner}>
+                    {burgers.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
+
+                    )}
+                </div>
+
+                <h1 className={styles.foodTitle}>Стейки</h1>
+                <div className={styles.foodConteiner}>
+                    {steak.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
+
+                    )}
+                </div>
+
+                <h1 className={styles.foodTitle}>Сковородки</h1>
+                <div className={styles.foodConteiner}>
+                    {fryingPan.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
+
+                    )}
+                </div>
+
+                <h1 className={styles.foodTitle}>Супы</h1>
+                <div className={styles.foodConteiner}>
+                    {soap.map((product) => (<ProductItem key={product.id} product={product} onAdd={onAdd} />)
+
+                    )}
+                </div>
+
             </div>
         </>)
 }
