@@ -31,7 +31,7 @@ function HomeHeader() {
             <div className={styles.fullScreen}>
                 <div className={styles.fullScreenBody}>
                     <div className={styles.socialField}>
-                       {User && `Привет ${User.name} ${User.secondName}`}
+                        {User && `Привет ${User.name} ${User.secondName}`}
                     </div>
                     <div className={styles.centralField}>
                         <div className={styles.centralFieldItems}>
@@ -45,7 +45,7 @@ function HomeHeader() {
                         <div className={styles.fullScreenLinks}>
                             <NavBar />
                         </div>
-                        { openNavBar && <BurgerMenu setOpenNavBar={setOpenNavBar}/> }
+                        {openNavBar && <BurgerMenu setOpenNavBar={setOpenNavBar} />}
                     </div>
                     <div className={styles.registrationField}>
                         <Button onClick={() => {
@@ -80,36 +80,36 @@ function HomeHeader() {
 
                 <div className={styles.advertisingField}>
                     <div className={styles.advertisingIcon}>
-                        <div><TiBeer                         style={{
-                            width: '4em', height: '4em',border: '2px solid #002420',
+                        <div><TiBeer style={{
+                            width: '4em', height: '4em', border: '2px solid #002420',
                             borderRadius: '50%', marginLeft: 'auto', marginRight: 'auto',
-                            backgroundColor: '#002420',  marginRight: '1rem'
-                            }}/></div>
+                            backgroundColor: '#002420', marginRight: '1rem'
+                        }} /></div>
                         <div className={styles.describe}>Собственная пивоварня</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><BiMusic                         style={{
-                            width: '4em', height: '4em',border: '2px solid #002420',
+                        <div><BiMusic style={{
+                            width: '4em', height: '4em', border: '2px solid #002420',
                             borderRadius: '50%', marginLeft: 'auto', marginRight: 'auto',
-                            backgroundColor: '#002420',  marginRight: '1rem'
-                            }} /></div>
+                            backgroundColor: '#002420', marginRight: '1rem'
+                        }} /></div>
                         <div className={styles.describe}>Живой звук</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><GiSlicedBread 
-                        style={{
-                            width: '4em', height: '4em',border: '2px solid #002420',
-                            borderRadius: '50%', marginLeft: 'auto', marginRight: 'auto',
-                            backgroundColor: '#002420',  marginRight: '1rem'
+                        <div><GiSlicedBread
+                            style={{
+                                width: '4em', height: '4em', border: '2px solid #002420',
+                                borderRadius: '50%', marginLeft: 'auto', marginRight: 'auto',
+                                backgroundColor: '#002420', marginRight: '1rem'
                             }} /></div>
                         <div className={styles.describe}>Собственная кондитерская и хлеб</div>
                     </div>
                     <div className={styles.advertisingIcon}>
-                        <div><MdSportsBasketball                         style={{
-                            width: '4em', height: '4em',border: '2px solid #002420',
+                        <div><MdSportsBasketball style={{
+                            width: '4em', height: '4em', border: '2px solid #002420',
                             borderRadius: '50%', marginLeft: 'auto', marginRight: 'auto',
                             backgroundColor: '#002420', marginRight: '1rem'
-                            }}  /></div>
+                        }} /></div>
                         <div className={styles.describe}>Спортивные трансляции</div>
                     </div>
                 </div>

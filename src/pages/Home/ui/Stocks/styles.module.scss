@@ -28,6 +28,13 @@
     transition: all 0.2s ease 0s;
 }
 
+.line{
+    border-bottom: 1.5px solid #897e47;
+    width: 90%;
+   margin-left: 70px;
+    margin-top: 4rem;
+}
+
 @media (max-width: 1280px){
     .stockItem{
         max-width: 150px;
@@ -51,5 +58,16 @@
         flex-wrap: wrap;
         justify-content: center;
         gap: 40px;
+    }
+}
+
+// 800
+@media (max-width: 800px){
+    .stockItem{
+        min-width: 276px;
+        min-height: 465px;
+    }
+    .stocks{
+        flex-wrap: wrap;
     }
 }

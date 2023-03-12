@@ -78,6 +78,8 @@ box-shadow: 0px 0px 33px 8px rgba(9, 9, 9, 0.3);
     background-color: coral
 }
 
+//1152
+
 @media (max-width: 1152px){
     .foodItem{
         width: 530px;
@@ -96,10 +98,27 @@ box-shadow: 0px 0px 33px 8px rgba(9, 9, 9, 0.3);
 }
 .btn{
     margin-right: 10px;
-   
-  
     padding: 0 3px;
-  
+}
+}
+//1024
 
-}
-}
+@media (max-width: 1024px){
+    .foodItem{
+        width: 900px;
+    }
+    .img{
+        width: 300px;
+        height: 220px;
+    }
+    .foodName{
+        font-size: 40px;
+    }
+    .price{
+        font-size: 24px;;
+    }
+    .compound, .weight{
+        font-size: 24px;
+    }      
+  }
+

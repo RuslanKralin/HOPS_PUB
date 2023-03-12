@@ -63,6 +63,8 @@
     }
 }
 
+// 1024
+
 @media (max-width: 1024px){
     .menuBtnRight{
         width: 56rem; 
@@ -73,6 +75,25 @@
         width: 56rem; 
         height: 56rem;
         margin-left: 2rem
+    }
+    .menuWrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+// 800
+@media (max-width: 800px){
+    .menuBtnRight{
+        width: 48rem; 
+        height: 48rem;
+        margin-left: 0rem
+    }
+    .menuBtnLeft{
+        width: 48rem; 
+        height: 48rem;
+        margin-left: 0rem
     }
     .menuWrapper{
         display: flex;

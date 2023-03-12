@@ -70,22 +70,22 @@ a:hover{
     letter-spacing: 0.001em;
 }
 
-.active{
-    cursor: pointer;
-    border: 2px solid #002420;
-    background-color: #002420 ;
-    color: white;
-    border: none;
-    border-radius: 32px;
-    box-shadow: 0 0 0 1px silver inset;
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-}
+// .active{
+//     cursor: pointer;
+//     border: 2px solid #002420;
+//     background-color: #002420 ;
+//     color: white;
+//     border: none;
+//     border-radius: 32px;
+//     box-shadow: 0 0 0 1px silver inset;
+//     padding: 8px 16px;
+//     font-size: 14px;
+//     cursor: pointer;
+//     white-space: nowrap;
+//     display: flex;
+//     align-items: center;
+//     gap: 8px;
+// }
 
 .barLink{
     cursor: pointer;
@@ -102,7 +102,9 @@ a:hover{
     align-items: center;
     gap: 8px;
 }
-
+.foodTitle{
+    padding: 20px 30px;
+}
 @media (max-width: 1280px){
     .limitedConteiner{
         padding-left: 30px;
@@ -114,12 +116,30 @@ a:hover{
 @media (max-width: 1152px){
     .foodConteiner{
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 170px);
+        grid-template-rows: repeat(2, 220px);
         grid-row-gap: 20px;
         grid-column-gap: 15px;
         padding-bottom: 15px;
     }
   }
+@media (max-width: 1024px){
+    .foodConteiner{
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 25px
+    }
+    .headerNavBar{
+        position: sticky;
+        background-color: #fffaf0;
+        display: flex;
+        height: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bar{
+        padding-bottom: 20px;
+    }
+}
+    
 
 
 

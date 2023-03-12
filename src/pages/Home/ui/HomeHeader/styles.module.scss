@@ -165,7 +165,7 @@
 }
 
 //Адаптация
-
+//1440
 @media (max-width: 1440px){
     .advertisingField{
         top: 90%;
@@ -174,7 +174,7 @@
 
 }
 
-
+//1280
 @media (max-width: 1280px){
     .registrationField{
         gap: 2rem;
@@ -189,10 +189,9 @@
         padding-right: 0vw;
         padding-bottom: 25.4vw;
      }
-
-
 }
 
+//1024
 @media (max-width: 1024px){
     .navBarIcon{
     display: block;
@@ -217,4 +216,32 @@
     top: 95%;
     padding-right: 50px;
 }
+}
+
+//800
+@media (max-width: 800px){
+    .fullScreenBody{
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+     }
+     .registrationField{
+        padding-left: 117px;
+        margin-top: 0%;
+        gap:2rem;
+    }
+    .advertisingField{
+       
+        top: 89.8%;
+        width: 100vw;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 30px auto;
+        grid-gap: 10px;
+        display: grid;
+       
+         
+        // display: flex;
+        // justify-content: space-around;
+        padding: 1.3rem 0;
+    }
 }

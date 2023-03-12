@@ -169,4 +169,33 @@
 }
 
 
+//800
+@media (max-width: 800px){
+    .text{
+     width: 750px;
+     text-align: center;
+    }
+    .restourantField{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0rem;
+    }
+    .left {
+        width: 48rem;
+        margin-bottom: 14rem;
+        margin-left: 0rem
+       }
+     .right {
+        width: 48rem;
+        margin-bottom: 14rem;
+        margin-left: 0rem
+       }
+       .restourantField{
+        display: flex;
+        gap: 2rem;
+        margin-bottom: 0rem;
+    }
+      }
+
 

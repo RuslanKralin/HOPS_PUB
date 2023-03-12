@@ -71,3 +71,14 @@ opacity: 0.5;
 
 }
 
+//Адаптация
+// 1024
+
+@media (max-width: 1024px){
+    .contactsItem{
+        display: flex;
+        flex-direction: column;
+
+    }
+}
+

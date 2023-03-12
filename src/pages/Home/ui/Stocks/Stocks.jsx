@@ -22,8 +22,8 @@ function Stocks() {
                <div><img className={styles.stockItem} src={stock5} alt='stock'/></div>
                <div><img className={styles.stockItem} src={stock6} alt='stock'/></div>
                <div><img className={styles.stockItem} src={stock7} alt='stock'/></div>
-               
            </div>
+           <div className={styles.line}></div>
         </div>
 
     );

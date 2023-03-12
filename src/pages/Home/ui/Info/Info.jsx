@@ -19,7 +19,7 @@ function Info() {
             <div className={styles.descriptionField}>
                 <div className={styles.titleInfo}>Добро пожаловать в Хоспер Хопс Паб</div>
                 <div className={styles.descrip}>
-                    <p>Место в Минске, где вы можете попробовать ароматный стейк из испанской печи, выпить настоящего крафта и наблюдать матч своей любимой команды</p>
+                    <p className={styles.text}>Место в Минске, где вы можете попробовать ароматный стейк из испанской печи, выпить настоящего крафта и наблюдать матч своей любимой команды</p>
                 </div>
                 <div className={styles.titleInfo} >Пей, ешь и кайфуй</div>
             </div>
