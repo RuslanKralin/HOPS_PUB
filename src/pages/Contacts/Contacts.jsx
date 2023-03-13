@@ -1,5 +1,6 @@
-import styles from './styles.module.scss'
 import contacts from 'assets/backgraund/contacts.jpg'
+
+import styles from './styles.module.scss'
 
 function Contacts() {
 

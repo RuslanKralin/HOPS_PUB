@@ -1,8 +1,5 @@
-import styles from './styles.module.scss'
 import primeHomePhoto from 'assets/backgraund/primeHomePhoto.jpg'
 import logoLight from 'assets/backgraund/logoLight.png'
-// import { FiFacebook, FiTwitter } from 'react-icons/fi'
-// import { FaTiktok, FaInstagram } from 'react-icons/fa'
 import { TiBeer } from 'react-icons/ti'
 import { BiMusic } from 'react-icons/bi'
 import { GiSlicedBread } from 'react-icons/gi'
@@ -16,6 +13,7 @@ import { PrimeButton } from 'shared/ui'
 import OrderModalAddresses from '../../../../shared/ui/OrderModalAddresses/OrderModalAddresses'
 import NavBar from './ui/NavBar/NavBar'
 import { BurgerMenu } from './ui/BurgerMenu'
+import styles from './styles.module.scss'
 
 
 function HomeHeader() {

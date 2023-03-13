@@ -1,5 +1,7 @@
-import { Home, Menu, Restaurant, NotFound, Brewery,Contacts  } from 'pages';
 import { Routes, Route } from 'react-router-dom';
+
+import { Home, Menu, Restaurant, NotFound, Brewery,Contacts  } from 'pages';
+
 import { ROUTES } from 'shared/consts/routes';
 
 function Router() {

@@ -1,11 +1,13 @@
-// import { Home } from "pages/Home"
-import { useState } from "react"
+
 import { BrowserRouter } from "react-router-dom"
-import { Layout } from "./Layout"
+
 import Router from "./Router"
+import { Layout } from "./Layout"
+
+import { useState } from "react"
 
 function App() {
-    const [store, setStore] = useState({
+	const [store, setStore] = useState({
 		user: {
 			balance: '',
 			email: '',
@@ -13,17 +15,16 @@ function App() {
 			day: '',
 			month: '',
 			year: '',
-			password: ''		
+			password: ''
 		},
 		isUserLoggedIn: false
 	})
 
-    return <BrowserRouter> <div>
-        {/* <Home/> */}
-        <Router/>
-        <Layout/>
-    </div>
-    </BrowserRouter>
+	return <BrowserRouter> <div>
+		<Router />
+		<Layout />
+	</div>
+	</BrowserRouter>
 }
 
 export default App

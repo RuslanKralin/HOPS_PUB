@@ -1,5 +1,42 @@
 .wrapper{
     width: 100vw;
-    height: 500px;
-    background-color: aqua;
+    height: 400px;
+    background-color:antiquewhite;
+    text-align: center;
+    padding: 30px;
+}
+
+.content{
+    display: inline-block;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.input{
+    margin-right: 30px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    outline: none;
+}
+
+.btn{
+    border: none;
+    background-color: green;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.weater{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.temp,.city{
+    padding-bottom: 10px;
 }
